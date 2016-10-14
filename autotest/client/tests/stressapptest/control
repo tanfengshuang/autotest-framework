@@ -1,0 +1,20 @@
+AUTHOR = "Cao, Chen <kcao@redhat.com>"
+NAME = "Stressful Application Test"
+TEST_TYPE = "CLIENT"
+TEST_CLASS = "HARDWARE"
+TEST_CATEGORY = "STRESS"
+TIME = "MEDIUM"
+DOC = """\
+Stressful Application Test (or stressapptest, its unix name) tries
+to maximize randomized traffic to memory from processor and I/O,
+with the intent of creating a realistic high load situation in order
+to test the existing hardware devices in a computer.
+
+See,
+    http://code.google.com/p/stressapptest/
+"""
+
+# We can do some calculation based on the OS info and provide
+# stressapptest arguments here.
+job.run_test(url='stressapptest')
+

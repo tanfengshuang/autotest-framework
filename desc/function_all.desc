@@ -1,0 +1,45 @@
+variants:
+    - @pre_image:
+        only unattended_install.cd.default_install.aio_native rh_kernel_update disable_win_update
+    - @basic:
+        only boot reboot stop_continue screendump shutdown system_reset_bootable system_powerdown system_reset check_unhalt_vcpu
+    - @acpi:
+        only linux_s3 guest_s4
+    - @cpu_clustering:
+        only cpuflags physical_resources_check nx
+    - @timer_device:
+        only autotest.monotonic_time autotest.hwclock autotest.tsc autotest.rtc tsc_drift timedrift clock_getres
+    - @virtual_block_device:
+        only autotest.dbench cdrom hdparm lvm ioquit format_disk block_hotplug floppy fillup_disk multi_disk change_media eject_media readonly_floppy yonit_bitmap_benchmark
+    - @usb_device:
+        only usb
+    - @virtual_nic_device:
+        only autotest.pktgen pxe jumbo multicast mac_change nic_hotplug ethtool vlan ping multi_nics multi_nics_verify netperf2 netperf nic_bonding nicdriver_unload nic_promisc file_transfer netstress_kill_guest set_link netperf_udp
+    - @host_operation:
+        only module_probe
+    - @migration:
+        only migrate
+    - @balloon:
+        only balloon_check
+    - @hugepage:
+        only autotest.libhugetlbfs
+    - @transparent_huge_page:
+        only trans_hugepage
+    - @ksm_test:
+        only ksm_base ksm_overcommit
+    - @qcow2_test:
+        only iofuzz boot_savevm enospc nfs_corrupt qemu_disk_img qemu_img qemu_io qemu_iotests vmstop live_snapshot
+    - @virtio_serial:
+        only virtio_console
+    - @x2apic:
+        only ipi_x2apic kexec
+    - @qmp:
+        only qmp_basic qmp_event_notification qmp_command
+    - @kdump_test:
+        only kdump
+    - @post_check:
+        only qemu_img_check
+    - @virtual_desktop:
+        only vnc_test
+    - @sound_device:
+        only audio

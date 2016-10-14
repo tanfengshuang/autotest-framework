@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata packages="4" xmlns="http://linux.duke.edu/metadata/common" xmlns:rpm="http://linux.duke.edu/metadata/rpm"><package type="rpm">
+  <name>tuned-profiles-sap-hana</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.5.1" rel="4.el7"/>
+  <checksum type="sha256" pkgid="YES">387fa1915d376790a831145403cba68ba09e977945afd3779ae72996a70aff68</checksum>
+  <summary>Additional tuned profile(s) targeted to SAP HANA loads</summary>
+  <description>Additional tuned profile(s) targeted to SAP HANA loads.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>https://fedorahosted.org/tuned/</url>
+  <time file="1447403394" build="1443097330"/>
+  <size package="17896" installed="1648" archive="2676"/>
+<location href="Packages/tuned-profiles-sap-hana-2.5.1-4.el7.noarch.rpm"/>
+  <format>
+    <rpm:license>GPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>Unspecified</rpm:group>
+    <rpm:buildhost>ppc-015.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm>tuned-2.5.1-4.el7.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="1384" end="16232"/>
+    <rpm:provides>
+      <rpm:entry name="tuned-profiles-sap-hana" flags="EQ" epoch="0" ver="2.5.1" rel="4.el7"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="/bin/bash"/>
+      <rpm:entry name="tuned" flags="EQ" epoch="0" ver="2.5.1" rel="4.el7"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>resource-agents-sap-hana</name>
+  <arch>x86_64</arch>
+  <version epoch="0" ver="3.9.5" rel="54.el7"/>
+  <checksum type="sha256" pkgid="YES">01d41e99567265b98261c5ce92ebaa672c7d8116060df5eae0473085aedfc6d1</checksum>
+  <summary>SAP HANA cluster resource agents</summary>
+  <description>The SAP HANA resource agents interface with  Pacemaker to allow
+SAP instances to be managed in a cluster environment.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>https://github.com/ClusterLabs/resource-agents</url>
+  <time file="1447405325" build="1441598062"/>
+  <size package="57924" installed="117631" archive="118404"/>
+<location href="Packages/resource-agents-sap-hana-3.9.5-54.el7.x86_64.rpm"/>
+  <format>
+    <rpm:license>GPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>x86-019.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm>resource-agents-3.9.5-54.el7.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="1384" end="30036"/>
+    <rpm:provides>
+      <rpm:entry name="resource-agents-sap-hana" flags="EQ" epoch="0" ver="3.9.5" rel="54.el7"/>
+      <rpm:entry name="resource-agents-sap-hana(x86-64)" flags="EQ" epoch="0" ver="3.9.5" rel="54.el7"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="/bin/bash"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="resource-agents" flags="EQ" epoch="0" ver="3.9.5" rel="54.el7"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>resource-agents-sap-hana</name>
+  <arch>x86_64</arch>
+  <version epoch="0" ver="3.9.5" rel="54.el7_2.1"/>
+  <checksum type="sha256" pkgid="YES">5c11b6292da8067a88fae9958b82d221e793af63c2142aa85389c29b56aa76e9</checksum>
+  <summary>SAP HANA cluster resource agents</summary>
+  <description>The SAP HANA resource agents interface with  Pacemaker to allow
+SAP instances to be managed in a cluster environment.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>https://github.com/ClusterLabs/resource-agents</url>
+  <time file="1449569986" build="1448038275"/>
+  <size package="58076" installed="117631" archive="118408"/>
+<location href="Packages/resource-agents-sap-hana-3.9.5-54.el7_2.1.x86_64.rpm"/>
+  <format>
+    <rpm:license>GPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>x86-021.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm>resource-agents-3.9.5-54.el7_2.1.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="1384" end="30180"/>
+    <rpm:provides>
+      <rpm:entry name="resource-agents-sap-hana" flags="EQ" epoch="0" ver="3.9.5" rel="54.el7_2.1"/>
+      <rpm:entry name="resource-agents-sap-hana(x86-64)" flags="EQ" epoch="0" ver="3.9.5" rel="54.el7_2.1"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="/bin/bash"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="resource-agents" flags="EQ" epoch="0" ver="3.9.5" rel="54.el7_2.1"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>tuned-profiles-sap-hana</name>
+  <arch>noarch</arch>
+  <version epoch="0" ver="2.5.1" rel="4.el7_2.1"/>
+  <checksum type="sha256" pkgid="YES">e44051587d8a743a74fea878c4e348f786ff47ac0f8f0272d0e552a3bab0590e</checksum>
+  <summary>Additional tuned profile(s) targeted to SAP HANA loads</summary>
+  <description>Additional tuned profile(s) targeted to SAP HANA loads.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>https://fedorahosted.org/tuned/</url>
+  <time file="1449570397" build="1447722273"/>
+  <size package="18696" installed="1648" archive="2676"/>
+<location href="Packages/tuned-profiles-sap-hana-2.5.1-4.el7_2.1.noarch.rpm"/>
+  <format>
+    <rpm:license>GPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>Unspecified</rpm:group>
+    <rpm:buildhost>ppc-016.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm>tuned-2.5.1-4.el7_2.1.src.rpm</rpm:sourcerpm>
+    <rpm:header-range start="1384" end="17032"/>
+    <rpm:provides>
+      <rpm:entry name="tuned-profiles-sap-hana" flags="EQ" epoch="0" ver="2.5.1" rel="4.el7_2.1"/>
+    </rpm:provides>
+    <rpm:requires>
+      <rpm:entry name="/bin/bash"/>
+      <rpm:entry name="tuned" flags="EQ" epoch="0" ver="2.5.1" rel="4.el7_2.1"/>
+    </rpm:requires>
+  </format>
+</package></metadata>

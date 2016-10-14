@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata packages="20" xmlns="http://linux.duke.edu/metadata/common" xmlns:rpm="http://linux.duke.edu/metadata/rpm"><package type="rpm">
+  <name>kernel-rt</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.10.0" rel="229.14.1.rt56.141.13.el7_1"/>
+  <checksum type="sha256" pkgid="YES">499701a66d21dcf886522618f31c22843260d47cea73b072081b70436df39680</checksum>
+  <summary>The Linux Realtime kernel</summary>
+  <description>The kernel-rt package contains the Linux kernel (vmlinuz), the core of any
+Linux operating system.  The kernel handles the basic functions
+of the operating system: memory allocation, process allocation, device
+input and output, etc.
+
+This kernel has been compiled withe the RT patch applied and is intended
+for use in deterministic response-time situations</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://www.kernel.org/</url>
+  <time file="1442308158" build="1440530147"/>
+  <size package="78908116" installed="79277069" archive="79279968"/>
+<location href="kernel-rt-3.10.0-229.14.1.rt56.141.13.el7_1.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Kernel</rpm:group>
+    <rpm:buildhost>x86-019.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="28516"/>
+    <rpm:requires>
+      <rpm:entry name="bash" flags="GE" epoch="0" ver="2.03"/>
+      <rpm:entry name="bc"/>
+      <rpm:entry name="binutils" flags="GE" epoch="0" ver="2.12"/>
+      <rpm:entry name="bzip2"/>
+      <rpm:entry name="diffutils"/>
+      <rpm:entry name="findutils"/>
+      <rpm:entry name="gawk"/>
+      <rpm:entry name="gcc" flags="GE" epoch="0" ver="3.4.2"/>
+      <rpm:entry name="gnupg"/>
+      <rpm:entry name="gzip"/>
+      <rpm:entry name="hmaccalc"/>
+      <rpm:entry name="hostname"/>
+      <rpm:entry name="m4"/>
+      <rpm:entry name="make" flags="GE" epoch="0" ver="3.78"/>
+      <rpm:entry name="module-init-tools"/>
+      <rpm:entry name="net-tools"/>
+      <rpm:entry name="openssl"/>
+      <rpm:entry name="patch" flags="GE" epoch="0" ver="2.5.4"/>
+      <rpm:entry name="patchutils"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="pesign" flags="GE" epoch="0" ver="0.109" rel="4"/>
+      <rpm:entry name="python"/>
+      <rpm:entry name="redhat-rpm-config"/>
+      <rpm:entry name="rpm-build" flags="GE" epoch="0" ver="4.8.0" rel="7"/>
+      <rpm:entry name="sh-utils"/>
+      <rpm:entry name="tar"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+    <rpm:conflicts>
+      <rpm:entry name="rhbuildsys(DiskFree)" flags="LT" epoch="0" ver="7Gb"/>
+    </rpm:conflicts>
+  </format>
+</package>
+<package type="rpm">
+  <name>rt-setup</name>
+  <arch>src</arch>
+  <version epoch="0" ver="1.58" rel="2.el7"/>
+  <checksum type="sha256" pkgid="YES">c2912799d3120bf8772cf5412281b181c7d21f7d51d60bce1135e4e4e2a1feca</checksum>
+  <summary>Setup RHEL-RT environment details</summary>
+  <description>The 'rt-setup' package configures details required by RHEL-RT environment.
+  - creates realtime group
+  - adds realtime limits configuration for PAM
+  - adds /usr/bin/rt-setup-kdump to config kdump in RT
+  - disables irqbalance by default
+  - adds udev specific rules for threaded irqs and /dev/rtc access
+  - adds /usr/bin/slub_cpu_partial_off to turn off cpu_partials in SLUB</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url></url>
+  <time file="1421227235" build="1419904206"/>
+  <size package="17420" installed="17451" archive="18736"/>
+<location href="rt-setup-1.58-2.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPL+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>x86-025.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="11432"/>
+    <rpm:requires>
+      <rpm:entry name="gcc"/>
+      <rpm:entry name="sqlite"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>kernel-rt</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.10.0" rel="229.20.1.rt56.141.14.el7_1"/>
+  <checksum type="sha256" pkgid="YES">fed2776c7c41787a60e9aa0532df5f48f30866598b5c2f448877d3ff72d5a02a</checksum>
+  <summary>The Linux Realtime kernel</summary>
+  <description>The kernel-rt package contains the Linux kernel (vmlinuz), the core of any
+Linux operating system.  The kernel handles the basic functions
+of the operating system: memory allocation, process allocation, device
+input and output, etc.
+
+This kernel has been compiled withe the RT patch applied and is intended
+for use in deterministic response-time situations</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://www.kernel.org/</url>
+  <time file="1446567991" build="1443452848"/>
+  <size package="78905591" installed="79274531" archive="79277432"/>
+<location href="kernel-rt-3.10.0-229.20.1.rt56.141.14.el7_1.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Kernel</rpm:group>
+    <rpm:buildhost>x86-019.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="28676"/>
+    <rpm:requires>
+      <rpm:entry name="bash" flags="GE" epoch="0" ver="2.03"/>
+      <rpm:entry name="bc"/>
+      <rpm:entry name="binutils" flags="GE" epoch="0" ver="2.12"/>
+      <rpm:entry name="bzip2"/>
+      <rpm:entry name="diffutils"/>
+      <rpm:entry name="findutils"/>
+      <rpm:entry name="gawk"/>
+      <rpm:entry name="gcc" flags="GE" epoch="0" ver="3.4.2"/>
+      <rpm:entry name="gnupg"/>
+      <rpm:entry name="gzip"/>
+      <rpm:entry name="hmaccalc"/>
+      <rpm:entry name="hostname"/>
+      <rpm:entry name="m4"/>
+      <rpm:entry name="make" flags="GE" epoch="0" ver="3.78"/>
+      <rpm:entry name="module-init-tools"/>
+      <rpm:entry name="net-tools"/>
+      <rpm:entry name="openssl"/>
+      <rpm:entry name="patch" flags="GE" epoch="0" ver="2.5.4"/>
+      <rpm:entry name="patchutils"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="pesign" flags="GE" epoch="0" ver="0.109" rel="4"/>
+      <rpm:entry name="python"/>
+      <rpm:entry name="redhat-rpm-config"/>
+      <rpm:entry name="rpm-build" flags="GE" epoch="0" ver="4.8.0" rel="7"/>
+      <rpm:entry name="sh-utils"/>
+      <rpm:entry name="tar"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+    <rpm:conflicts>
+      <rpm:entry name="rhbuildsys(DiskFree)" flags="LT" epoch="0" ver="7Gb"/>
+    </rpm:conflicts>
+  </format>
+</package>
+<package type="rpm">
+  <name>kernel-rt</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.10.0" rel="229.11.1.rt56.141.11.el7_1"/>
+  <checksum type="sha256" pkgid="YES">6965bcbbc0827631bd4e20dc4af7cb2716b3a9e166549640f64ed44c747dd4a4</checksum>
+  <summary>The Linux Realtime kernel</summary>
+  <description>The kernel-rt package contains the Linux kernel (vmlinuz), the core of any
+Linux operating system.  The kernel handles the basic functions
+of the operating system: memory allocation, process allocation, device
+input and output, etc.
+
+This kernel has been compiled withe the RT patch applied and is intended
+for use in deterministic response-time situations</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://www.kernel.org/</url>
+  <time file="1438800205" build="1437596133"/>
+  <size package="78913405" installed="79283413" archive="79286312"/>
+<location href="kernel-rt-3.10.0-229.11.1.rt56.141.11.el7_1.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Kernel</rpm:group>
+    <rpm:buildhost>x86-030.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="28092"/>
+    <rpm:requires>
+      <rpm:entry name="bash" flags="GE" epoch="0" ver="2.03"/>
+      <rpm:entry name="bc"/>
+      <rpm:entry name="binutils" flags="GE" epoch="0" ver="2.12"/>
+      <rpm:entry name="bzip2"/>
+      <rpm:entry name="diffutils"/>
+      <rpm:entry name="findutils"/>
+      <rpm:entry name="gawk"/>
+      <rpm:entry name="gcc" flags="GE" epoch="0" ver="3.4.2"/>
+      <rpm:entry name="gnupg"/>
+      <rpm:entry name="gzip"/>
+      <rpm:entry name="hmaccalc"/>
+      <rpm:entry name="hostname"/>
+      <rpm:entry name="m4"/>
+      <rpm:entry name="make" flags="GE" epoch="0" ver="3.78"/>
+      <rpm:entry name="module-init-tools"/>
+      <rpm:entry name="net-tools"/>
+      <rpm:entry name="openssl"/>
+      <rpm:entry name="patch" flags="GE" epoch="0" ver="2.5.4"/>
+      <rpm:entry name="patchutils"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="pesign" flags="GE" epoch="0" ver="0.109" rel="4"/>
+      <rpm:entry name="python"/>
+      <rpm:entry name="redhat-rpm-config"/>
+      <rpm:entry name="rpm-build" flags="GE" epoch="0" ver="4.8.0" rel="7"/>
+      <rpm:entry name="sh-utils"/>
+      <rpm:entry name="tar"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+    <rpm:conflicts>
+      <rpm:entry name="rhbuildsys(DiskFree)" flags="LT" epoch="0" ver="7Gb"/>
+    </rpm:conflicts>
+  </format>
+</package>
+<package type="rpm">
+  <name>rteval-loads</name>
+  <arch>src</arch>
+  <version epoch="0" ver="1.3" rel="3.el7"/>
+  <checksum type="sha256" pkgid="YES">e583875b5026a3b70d40dd411bf0f50c3e1c217635b897fd44fef8c6be8132a2</checksum>
+  <summary>Source files for rteval loads</summary>
+  <description>This package provides source code for system loads used by the rteval package</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://git.kernel.org/?p=linux/kernel/git/clrkwllms/rteval.git</url>
+  <time file="1440859290" build="1433530120"/>
+  <size package="76039106" installed="76098426" archive="76098812"/>
+<location href="rteval-loads-1.3-3.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>Development/Tools</rpm:group>
+    <rpm:buildhost>ppc-020.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="3812"/>
+  </format>
+</package>
+<package type="rpm">
+  <name>rteval</name>
+  <arch>src</arch>
+  <version epoch="0" ver="2.1" rel="7.el7"/>
+  <checksum type="sha256" pkgid="YES">8a03ca2c8ff2118b56779b52056bf96c1db318748ea3699d7439450c30863b0f</checksum>
+  <summary>Utility to evaluate system suitability for RT Linux</summary>
+  <description>The rteval script is a utility for measuring various aspects of
+realtime behavior on a system under load. The script unpacks the
+kernel source, and then goes into a loop, running hackbench and
+compiling a kernel tree. During that loop the cyclictest program
+is run to measure event response time. After the run time completes,
+a statistical analysis of the event response times is done and printed
+to the screen.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://git.kernel.org/?p=linux/kernel/git/clrkwllms/rteval.git</url>
+  <time file="1421827954" build="1421253766"/>
+  <size package="71852" installed="66274" archive="66656"/>
+<location href="rteval-2.1-7.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>Development/Tools</rpm:group>
+    <rpm:buildhost>x86-019.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="16196"/>
+    <rpm:requires>
+      <rpm:entry name="python"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>rt-tests</name>
+  <arch>src</arch>
+  <version epoch="0" ver="0.92" rel="1.el7"/>
+  <checksum type="sha256" pkgid="YES">bd9784561e870ef3c6ff280a231690cd8c9cfc8c7154d97d1eeb85805423e032</checksum>
+  <summary>Programs that test various rt-features</summary>
+  <description>rt-tests is a set of programs that test and measure various components of
+real-time kernel behavior. This package measures timer, signal, and hardware
+latency. It also tests the functioning of priority-inheritance mutexes.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>git://git.kernel.org/pub/scm/linux/kernel/git/tglx/rt-tests.git</url>
+  <time file="1440860225" build="1434719651"/>
+  <size package="205440" installed="198028" archive="198408"/>
+<location href="rt-tests-0.92-1.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>Development/Tools</rpm:group>
+    <rpm:buildhost>x86-035.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="18992"/>
+    <rpm:requires>
+      <rpm:entry name="numactl-devel"/>
+      <rpm:entry name="python"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>rt-tests</name>
+  <arch>src</arch>
+  <version epoch="0" ver="0.87" rel="2.el7"/>
+  <checksum type="sha256" pkgid="YES">2280df748501c2e9445ae9fbbf1d3fbaa73063d92485292c1d329523d91467bf</checksum>
+  <summary>Programs that test various rt-features</summary>
+  <description>rt-tests is a set of programs that test and measure various components of
+real-time kernel behavior. This package measures timer, signal, and hardware
+latency. It also tests the functioning of priority-inheritance mutexes.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>git://git.kernel.org/pub/scm/linux/kernel/git/tglx/rt-tests.git</url>
+  <time file="1418147851" build="1415313826"/>
+  <size package="195244" installed="188306" archive="188688"/>
+<location href="rt-tests-0.87-2.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>Development/Tools</rpm:group>
+    <rpm:buildhost>x86-017.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="16068"/>
+    <rpm:requires>
+      <rpm:entry name="numactl-devel"/>
+      <rpm:entry name="python"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>rteval-loads</name>
+  <arch>src</arch>
+  <version epoch="0" ver="1.3" rel="2.el7"/>
+  <checksum type="sha256" pkgid="YES">118e2c91f72c1c4afbde94560b54ac1030287a77edcc7db238528a425ab6af3f</checksum>
+  <summary>Source files for rteval loads</summary>
+  <description>This package provides source code for system loads used by the rteval package</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://git.kernel.org/?p=linux/kernel/git/clrkwllms/rteval.git</url>
+  <time file="1418148166" build="1415640493"/>
+  <size package="76038957" installed="76098297" archive="76098684"/>
+<location href="rteval-loads-1.3-2.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>Development/Tools</rpm:group>
+    <rpm:buildhost>ppc-016.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="3712"/>
+  </format>
+</package>
+<package type="rpm">
+  <name>kernel-rt</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.10.0" rel="229.7.2.rt56.141.6.el7_1"/>
+  <checksum type="sha256" pkgid="YES">97881df8dda079934cbbdae4e1d93201017082b1d31f890afaebe1345b316750</checksum>
+  <summary>The Linux Realtime kernel</summary>
+  <description>The kernel-rt package contains the Linux kernel (vmlinuz), the core of any
+Linux operating system.  The kernel handles the basic functions
+of the operating system: memory allocation, process allocation, device
+input and output, etc.
+
+This kernel has been compiled withe the RT patch applied and is intended
+for use in deterministic response-time situations</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://www.kernel.org/</url>
+  <time file="1435046885" build="1432313323"/>
+  <size package="78908054" installed="79277371" archive="79280272"/>
+<location href="kernel-rt-3.10.0-229.7.2.rt56.141.6.el7_1.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Kernel</rpm:group>
+    <rpm:buildhost>x86-024.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="26872"/>
+    <rpm:requires>
+      <rpm:entry name="bash" flags="GE" epoch="0" ver="2.03"/>
+      <rpm:entry name="bc"/>
+      <rpm:entry name="binutils" flags="GE" epoch="0" ver="2.12"/>
+      <rpm:entry name="bzip2"/>
+      <rpm:entry name="diffutils"/>
+      <rpm:entry name="findutils"/>
+      <rpm:entry name="gawk"/>
+      <rpm:entry name="gcc" flags="GE" epoch="0" ver="3.4.2"/>
+      <rpm:entry name="gnupg"/>
+      <rpm:entry name="gzip"/>
+      <rpm:entry name="hmaccalc"/>
+      <rpm:entry name="hostname"/>
+      <rpm:entry name="m4"/>
+      <rpm:entry name="make" flags="GE" epoch="0" ver="3.78"/>
+      <rpm:entry name="module-init-tools"/>
+      <rpm:entry name="net-tools"/>
+      <rpm:entry name="openssl"/>
+      <rpm:entry name="patch" flags="GE" epoch="0" ver="2.5.4"/>
+      <rpm:entry name="patchutils"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="pesign" flags="GE" epoch="0" ver="0.109" rel="4"/>
+      <rpm:entry name="python"/>
+      <rpm:entry name="redhat-rpm-config"/>
+      <rpm:entry name="rpm-build" flags="GE" epoch="0" ver="4.8.0" rel="7"/>
+      <rpm:entry name="sh-utils"/>
+      <rpm:entry name="tar"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+    <rpm:conflicts>
+      <rpm:entry name="rhbuildsys(DiskFree)" flags="LT" epoch="0" ver="7Gb"/>
+    </rpm:conflicts>
+  </format>
+</package>
+<package type="rpm">
+  <name>kernel-rt</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.10.0" rel="327.rt56.204.el7"/>
+  <checksum type="sha256" pkgid="YES">7146fe96d2c017a57eef083a7fa64af584a5a852938d89493ee6efb8349ad161</checksum>
+  <summary>The Linux Realtime kernel</summary>
+  <description>The kernel-rt package contains the Linux kernel (vmlinuz), the core of any
+Linux operating system.  The kernel handles the basic functions
+of the operating system: memory allocation, process allocation, device
+input and output, etc.
+
+This kernel has been compiled withe the RT patch applied and is intended
+for use in deterministic response-time situations</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://www.kernel.org/</url>
+  <time file="1446648764" build="1446169155"/>
+  <size package="80757743" installed="81049532" archive="81052432"/>
+<location href="kernel-rt-3.10.0-327.rt56.204.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Kernel</rpm:group>
+    <rpm:buildhost>x86-021.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="34920"/>
+    <rpm:requires>
+      <rpm:entry name="bash" flags="GE" epoch="0" ver="2.03"/>
+      <rpm:entry name="bc"/>
+      <rpm:entry name="binutils" flags="GE" epoch="0" ver="2.12"/>
+      <rpm:entry name="bzip2"/>
+      <rpm:entry name="diffutils"/>
+      <rpm:entry name="findutils"/>
+      <rpm:entry name="gawk"/>
+      <rpm:entry name="gcc" flags="GE" epoch="0" ver="3.4.2"/>
+      <rpm:entry name="gnupg"/>
+      <rpm:entry name="gzip"/>
+      <rpm:entry name="hmaccalc"/>
+      <rpm:entry name="hostname"/>
+      <rpm:entry name="m4"/>
+      <rpm:entry name="make" flags="GE" epoch="0" ver="3.78"/>
+      <rpm:entry name="module-init-tools"/>
+      <rpm:entry name="net-tools"/>
+      <rpm:entry name="openssl"/>
+      <rpm:entry name="patch" flags="GE" epoch="0" ver="2.5.4"/>
+      <rpm:entry name="patchutils"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="pesign" flags="GE" epoch="0" ver="0.109" rel="4"/>
+      <rpm:entry name="python"/>
+      <rpm:entry name="redhat-rpm-config"/>
+      <rpm:entry name="rpm-build" flags="GE" epoch="0" ver="4.8.0" rel="7"/>
+      <rpm:entry name="sh-utils"/>
+      <rpm:entry name="tar"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+    <rpm:conflicts>
+      <rpm:entry name="rhbuildsys(DiskFree)" flags="LT" epoch="0" ver="7Gb"/>
+    </rpm:conflicts>
+  </format>
+</package>
+<package type="rpm">
+  <name>rtctl</name>
+  <arch>src</arch>
+  <version epoch="0" ver="1.13" rel="2.el7"/>
+  <checksum type="sha256" pkgid="YES">810a9f2e188f786fb41f9c82de8e1bd32de492c54e3dd5c8dba50fea172543ca</checksum>
+  <summary>Scripts for controlling scheduling priorities of system threads</summary>
+  <description>rtctl is a set of scripts used to manipulate the scheduling priorities of
+groups of system threads.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url></url>
+  <time file="1421227387" build="1419905176"/>
+  <size package="11694" installed="9594" archive="10132"/>
+<location href="rtctl-1.13-2.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPL</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>Applications/System</rpm:group>
+    <rpm:buildhost>ppc-015.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="3508"/>
+  </format>
+</package>
+<package type="rpm">
+  <name>rtcheck</name>
+  <arch>src</arch>
+  <version epoch="0" ver="0.7.7" rel="6.el7"/>
+  <checksum type="sha256" pkgid="YES">2cee06e3cf4683219ce8a47be54c1144528b1b40612d9b2e4147becbe9c71ab4</checksum>
+  <summary>Test the running system for real-time capabilities</summary>
+  <description>The rtcheck program is an application that tests the running system for
+real-time capabilities. If it identifies all capabilities, it will return an
+exit code of 0. If some capabilities are not present, it will return with a
+non-zero exit code. This program can be used by real-time-enabled programs
+to determine if the environment they are in is suitable for them to run
+correctly.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url></url>
+  <time file="1440859911" build="1439552077"/>
+  <size package="15434" installed="12153" archive="12704"/>
+<location href="rtcheck-0.7.7-6.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPL</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>Development/Tools</rpm:group>
+    <rpm:buildhost>ppc-037.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="4880"/>
+    <rpm:requires>
+      <rpm:entry name="systemd"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>kernel-rt</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.10.0" rel="229.4.2.rt56.141.6.el7_1"/>
+  <checksum type="sha256" pkgid="YES">23e1d162cefd4df4f3f52e832142efec568f3c8a29623a13a50c98b144984dc6</checksum>
+  <summary>The Linux Realtime kernel</summary>
+  <description>The kernel-rt package contains the Linux kernel (vmlinuz), the core of any
+Linux operating system.  The kernel handles the basic functions
+of the operating system: memory allocation, process allocation, device
+input and output, etc.
+
+This kernel has been compiled withe the RT patch applied and is intended
+for use in deterministic response-time situations</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://www.kernel.org/</url>
+  <time file="1431394404" build="1430164100"/>
+  <size package="78907911" installed="79277367" archive="79280268"/>
+<location href="kernel-rt-3.10.0-229.4.2.rt56.141.6.el7_1.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Kernel</rpm:group>
+    <rpm:buildhost>x86-034.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="26560"/>
+    <rpm:requires>
+      <rpm:entry name="bash" flags="GE" epoch="0" ver="2.03"/>
+      <rpm:entry name="bc"/>
+      <rpm:entry name="binutils" flags="GE" epoch="0" ver="2.12"/>
+      <rpm:entry name="bzip2"/>
+      <rpm:entry name="diffutils"/>
+      <rpm:entry name="findutils"/>
+      <rpm:entry name="gawk"/>
+      <rpm:entry name="gcc" flags="GE" epoch="0" ver="3.4.2"/>
+      <rpm:entry name="gnupg"/>
+      <rpm:entry name="gzip"/>
+      <rpm:entry name="hmaccalc"/>
+      <rpm:entry name="hostname"/>
+      <rpm:entry name="m4"/>
+      <rpm:entry name="make" flags="GE" epoch="0" ver="3.78"/>
+      <rpm:entry name="module-init-tools"/>
+      <rpm:entry name="net-tools"/>
+      <rpm:entry name="openssl"/>
+      <rpm:entry name="patch" flags="GE" epoch="0" ver="2.5.4"/>
+      <rpm:entry name="patchutils"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="pesign" flags="GE" epoch="0" ver="0.109" rel="4"/>
+      <rpm:entry name="python"/>
+      <rpm:entry name="redhat-rpm-config"/>
+      <rpm:entry name="rpm-build" flags="GE" epoch="0" ver="4.8.0" rel="7"/>
+      <rpm:entry name="sh-utils"/>
+      <rpm:entry name="tar"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+    <rpm:conflicts>
+      <rpm:entry name="rhbuildsys(DiskFree)" flags="LT" epoch="0" ver="7Gb"/>
+    </rpm:conflicts>
+  </format>
+</package>
+<package type="rpm">
+  <name>rt-setup</name>
+  <arch>src</arch>
+  <version epoch="0" ver="1.59" rel="2.el7"/>
+  <checksum type="sha256" pkgid="YES">8bdb89b2058e548564762c2b3ce506a6bd15f0f3e1544560467f25385f70fa01</checksum>
+  <summary>Setup RHEL-RT environment details</summary>
+  <description>The 'rt-setup' package configures details required by RHEL-RT environment.
+  - creates realtime group
+  - adds realtime limits configuration for PAM
+  - adds /usr/bin/rt-setup-kdump to config kdump in RT
+  - disables irqbalance by default
+  - adds udev specific rules for threaded irqs and /dev/rtc access
+  - adds /usr/bin/slub_cpu_partial_off to turn off cpu_partials in SLUB</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url></url>
+  <time file="1440860745" build="1436549729"/>
+  <size package="17813" installed="17860" archive="19144"/>
+<location href="rt-setup-1.59-2.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPL+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>x86-020.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="11712"/>
+    <rpm:requires>
+      <rpm:entry name="gcc"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>rtcheck</name>
+  <arch>src</arch>
+  <version epoch="0" ver="0.7.7" rel="3.el7"/>
+  <checksum type="sha256" pkgid="YES">eb815e5b93c160b8ea8a4eb6c927ff5d75f04fe94a825d89112e6aa1cf130024</checksum>
+  <summary>Test the running system for real-time capabilities</summary>
+  <description>The rtcheck program is an application that tests the running system for
+real-time capabilities. If it identifies all capabilities, it will return an
+exit code of 0. If some capabilities are not present, it will return with a
+non-zero exit code. This program can be used by real-time-enabled programs
+to determine if the environment they are in is suitable for them to run
+correctly.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url></url>
+  <time file="1418147869" build="1415632988"/>
+  <size package="14027" installed="10670" archive="11052"/>
+<location href="rtcheck-0.7.7-3.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPL</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>Development/Tools</rpm:group>
+    <rpm:buildhost>ppc-015.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="4276"/>
+  </format>
+</package>
+<package type="rpm">
+  <name>rteval</name>
+  <arch>src</arch>
+  <version epoch="0" ver="2.3" rel="1.el7"/>
+  <checksum type="sha256" pkgid="YES">d6132f0c92cc6e947359277fb5b202653ce62fc5753ebd19504d16f9718d2998</checksum>
+  <summary>Utility to evaluate system suitability for RT Linux</summary>
+  <description>The rteval script is a utility for measuring various aspects of
+realtime behavior on a system under load. The script unpacks the
+kernel source, and then goes into a loop, running hackbench and
+compiling a kernel tree. During that loop the cyclictest program
+is run to measure event response time. After the run time completes,
+a statistical analysis of the event response times is done and printed
+to the screen.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://git.kernel.org/?p=linux/kernel/git/clrkwllms/rteval.git</url>
+  <time file="1446648317" build="1439400227"/>
+  <size package="73487" installed="67694" archive="68076"/>
+<location href="rteval-2.3-1.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>Development/Tools</rpm:group>
+    <rpm:buildhost>x86-025.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="16576"/>
+    <rpm:requires>
+      <rpm:entry name="python"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>kernel-rt</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.10.0" rel="229.rt56.141.el7"/>
+  <checksum type="sha256" pkgid="YES">4af77e08e499bdc1f7dab047d16b6f8f3a1967a29b66101f1b8e461f47c2552a</checksum>
+  <summary>The Linux Realtime kernel</summary>
+  <description>The kernel-rt package contains the Linux kernel (vmlinuz), the core of any
+Linux operating system.  The kernel handles the basic functions
+of the operating system: memory allocation, process allocation, device
+input and output, etc.
+
+This kernel has been compiled withe the RT patch applied and is intended
+for use in deterministic response-time situations</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://www.kernel.org/</url>
+  <time file="1425396644" build="1423754619"/>
+  <size package="79332285" installed="79334981" archive="79337284"/>
+<location href="kernel-rt-3.10.0-229.rt56.141.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Kernel</rpm:group>
+    <rpm:buildhost>x86-025.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="24212"/>
+    <rpm:requires>
+      <rpm:entry name="bash" flags="GE" epoch="0" ver="2.03"/>
+      <rpm:entry name="bc"/>
+      <rpm:entry name="binutils" flags="GE" epoch="0" ver="2.12"/>
+      <rpm:entry name="bzip2"/>
+      <rpm:entry name="diffutils"/>
+      <rpm:entry name="findutils"/>
+      <rpm:entry name="gawk"/>
+      <rpm:entry name="gcc" flags="GE" epoch="0" ver="3.4.2"/>
+      <rpm:entry name="gnupg"/>
+      <rpm:entry name="gzip"/>
+      <rpm:entry name="hmaccalc"/>
+      <rpm:entry name="hostname"/>
+      <rpm:entry name="m4"/>
+      <rpm:entry name="make" flags="GE" epoch="0" ver="3.78"/>
+      <rpm:entry name="module-init-tools"/>
+      <rpm:entry name="net-tools"/>
+      <rpm:entry name="openssl"/>
+      <rpm:entry name="patch" flags="GE" epoch="0" ver="2.5.4"/>
+      <rpm:entry name="patchutils"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="pesign" flags="GE" epoch="0" ver="0.109" rel="4"/>
+      <rpm:entry name="python"/>
+      <rpm:entry name="redhat-rpm-config"/>
+      <rpm:entry name="rpm-build" flags="GE" epoch="0" ver="4.8.0" rel="7"/>
+      <rpm:entry name="sh-utils"/>
+      <rpm:entry name="tar"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+    <rpm:conflicts>
+      <rpm:entry name="rhbuildsys(DiskFree)" flags="LT" epoch="0" ver="7Gb"/>
+    </rpm:conflicts>
+  </format>
+</package>
+<package type="rpm">
+  <name>kernel-rt</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.10.0" rel="229.1.2.rt56.141.2.el7_1"/>
+  <checksum type="sha256" pkgid="YES">ed87a2d5cc99492702302a645115e22e70b9076ed79383ca36e67ed687261cb7</checksum>
+  <summary>The Linux Realtime kernel</summary>
+  <description>The kernel-rt package contains the Linux kernel (vmlinuz), the core of any
+Linux operating system.  The kernel handles the basic functions
+of the operating system: memory allocation, process allocation, device
+input and output, etc.
+
+This kernel has been compiled withe the RT patch applied and is intended
+for use in deterministic response-time situations</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://www.kernel.org/</url>
+  <time file="1427361576" build="1427134677"/>
+  <size package="79330858" installed="79333687" archive="79335992"/>
+<location href="kernel-rt-3.10.0-229.1.2.rt56.141.2.el7_1.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Kernel</rpm:group>
+    <rpm:buildhost>x86-018.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="24756"/>
+    <rpm:requires>
+      <rpm:entry name="bash" flags="GE" epoch="0" ver="2.03"/>
+      <rpm:entry name="bc"/>
+      <rpm:entry name="binutils" flags="GE" epoch="0" ver="2.12"/>
+      <rpm:entry name="bzip2"/>
+      <rpm:entry name="diffutils"/>
+      <rpm:entry name="findutils"/>
+      <rpm:entry name="gawk"/>
+      <rpm:entry name="gcc" flags="GE" epoch="0" ver="3.4.2"/>
+      <rpm:entry name="gnupg"/>
+      <rpm:entry name="gzip"/>
+      <rpm:entry name="hmaccalc"/>
+      <rpm:entry name="hostname"/>
+      <rpm:entry name="m4"/>
+      <rpm:entry name="make" flags="GE" epoch="0" ver="3.78"/>
+      <rpm:entry name="module-init-tools"/>
+      <rpm:entry name="net-tools"/>
+      <rpm:entry name="openssl"/>
+      <rpm:entry name="patch" flags="GE" epoch="0" ver="2.5.4"/>
+      <rpm:entry name="patchutils"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="pesign" flags="GE" epoch="0" ver="0.109" rel="4"/>
+      <rpm:entry name="python"/>
+      <rpm:entry name="redhat-rpm-config"/>
+      <rpm:entry name="rpm-build" flags="GE" epoch="0" ver="4.8.0" rel="7"/>
+      <rpm:entry name="sh-utils"/>
+      <rpm:entry name="tar"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+    <rpm:conflicts>
+      <rpm:entry name="rhbuildsys(DiskFree)" flags="LT" epoch="0" ver="7Gb"/>
+    </rpm:conflicts>
+  </format>
+</package>
+<package type="rpm">
+  <name>kernel-rt</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.10.0" rel="327.4.5.rt56.206.el7_2"/>
+  <checksum type="sha256" pkgid="YES">ac209f45a20bfc04e49f652dd14bb6621193304194f2f1159bd53790e46ca082</checksum>
+  <summary>The Linux Realtime kernel</summary>
+  <description>The kernel-rt package contains the Linux kernel (vmlinuz), the core of any
+Linux operating system.  The kernel handles the basic functions
+of the operating system: memory allocation, process allocation, device
+input and output, etc.
+
+This kernel has been compiled withe the RT patch applied and is intended
+for use in deterministic response-time situations</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://www.kernel.org/</url>
+  <time file="1453747705" build="1453403061"/>
+  <size package="80761451" installed="81053136" archive="81056040"/>
+<location href="kernel-rt-3.10.0-327.4.5.rt56.206.el7_2.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Kernel</rpm:group>
+    <rpm:buildhost>x86-034.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="35744"/>
+    <rpm:requires>
+      <rpm:entry name="bash" flags="GE" epoch="0" ver="2.03"/>
+      <rpm:entry name="bc"/>
+      <rpm:entry name="binutils" flags="GE" epoch="0" ver="2.12"/>
+      <rpm:entry name="bzip2"/>
+      <rpm:entry name="diffutils"/>
+      <rpm:entry name="findutils"/>
+      <rpm:entry name="gawk"/>
+      <rpm:entry name="gcc" flags="GE" epoch="0" ver="3.4.2"/>
+      <rpm:entry name="gnupg"/>
+      <rpm:entry name="gzip"/>
+      <rpm:entry name="hmaccalc"/>
+      <rpm:entry name="hostname"/>
+      <rpm:entry name="m4"/>
+      <rpm:entry name="make" flags="GE" epoch="0" ver="3.78"/>
+      <rpm:entry name="module-init-tools"/>
+      <rpm:entry name="net-tools"/>
+      <rpm:entry name="openssl"/>
+      <rpm:entry name="patch" flags="GE" epoch="0" ver="2.5.4"/>
+      <rpm:entry name="patchutils"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="pesign" flags="GE" epoch="0" ver="0.109" rel="4"/>
+      <rpm:entry name="python"/>
+      <rpm:entry name="redhat-rpm-config"/>
+      <rpm:entry name="rpm-build" flags="GE" epoch="0" ver="4.8.0" rel="7"/>
+      <rpm:entry name="sh-utils"/>
+      <rpm:entry name="tar"/>
+      <rpm:entry name="xz"/>
+    </rpm:requires>
+    <rpm:conflicts>
+      <rpm:entry name="rhbuildsys(DiskFree)" flags="LT" epoch="0" ver="7Gb"/>
+    </rpm:conflicts>
+  </format>
+</package></metadata>

@@ -1,0 +1,72 @@
+[Data]
+    AutoPartition = 1
+    MsDosInitiated = 0
+    UnattendedInstall = Yes
+
+[Unattended]
+    UnattendMode = FullUnattended
+    OemSkipEula = Yes
+    OemPreinstall = No
+    UnattendSwitch = Yes
+    CrashDumpSetting = 1
+    DriverSigningPolicy = ignore
+    OemPnPDriversPath="KVM_TEST_NETWORK_DRIVER_PATH"
+    WaitForReboot = no
+    Repartition = yes
+
+[GuiUnattended]
+    AdminPassword = "1q2w3eP"
+    AutoLogon = Yes
+    AutoLogonCount = 1000
+    OEMSkipRegional = 1
+    TimeZone = 85
+    OemSkipWelcome = 1
+
+[UserData]
+    ProductKey=KVM_TEST_CDKEY
+    FullName="Autotest Mindless Drone"
+    OrgName="Autotest"
+    ComputerName=*
+
+[LicenseFilePrintData]
+    AutoMode=PerServer
+    AutoUsers=15
+
+[Identification]
+    JoinWorkgroup=WORKGROUP
+
+[Networking]
+    InstallDefaultComponents=Yes
+
+[Components]
+
+[TerminalServices]
+    AllowConnections = 1
+
+[WindowsFirewall]
+    Profiles = WindowsFirewall.TurnOffFirewall
+
+[WindowsFirewall.TurnOffFirewall]
+    Mode = 0
+
+[SetupParams]
+    local="Local Area Connection"
+
+[Display]
+    Xresolution=1024
+    YResolution=768
+
+[GuiRunOnce]
+    Command0="cmd /c KVM_TEST_VIRTIO_NETWORK_INSTALLER"
+    Command1="cmd /c sc config TlntSvr start= auto"
+    Command2="cmd /c netsh firewall set opmode disable"
+    Command3="cmd /c net start telnet"
+    Command4="cmd /c E:\autoit3.exe  E:\git\git.au3"
+    Command5="cmd /c E:\cfg\use_pmtmr.bat"
+    Command6="cmd /c netsh interface ip set address local dhcp"
+    Command7="cmd /c E:\devcon\wlh_x86\devcon.exe install E:\Balloon\Wlh\x86\balloon.inf PCI\VEN_1AF4^&DEV_1002^&SUBSYS_00051AF4^&REV_00^\3^&13C0B0C5^&0^&30"
+    Command8="cmd /c E:\devcon\wlh_x86\devcon.exe install E:\QXL-Driver\WinXp32\qxl.inf PCI\VEN_1B36^&DEV_0100^&SUBSYS_11001AF4^&REV_01^\3^&13C0B0C5^&0^&18"
+    Command9="cmd /c E:\setuprss.bat"
+    Command10="cmd /c start /wait E:\dotnetfx35.exe /lang:ENU /norestart /passive"
+    Command11="cmd /c E:\setupsp.bat"
+    Command12="cmd /c A:\finish.exe"

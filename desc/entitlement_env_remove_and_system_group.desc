@@ -1,0 +1,5 @@
+variants:
+    - runcasein-guest:
+	only unattended_install tc_Setup_VM tc_ID284088_register_with_env_should_not_be_supported_in_sam tc_ID284092_register_without_env_in_sam
+    - runcasein-host:
+	only unattended_install tc_Setup_VM

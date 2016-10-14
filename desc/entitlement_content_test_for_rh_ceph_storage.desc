@@ -1,0 +1,39 @@
+variants:
+    - runcasein-guest:
+        RHEL-Server-7.0, RHEL-Server-7.1:
+	    only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_rh_ceph_storage tc_content_server
+
+        RHEL-Server-6.6:   
+	    only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_rh_ceph_storage tc_content_server
+
+    - runcasein-host:
+        RHEL-Server-7.0, RHEL-Server-7.1:
+	    only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_rh_ceph_storage tc_content_server
+
+        RHEL-Server-6.6:
+	    only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_rh_ceph_storage tc_content_server
+
+        RHEL-Server-s390x-7.0, RHEL-Server-s390x-7.1:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_s390x
+
+        RHEL-Server-ppc64-7.0, RHEL-Server-ppc64-7.1:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_ppc64
+
+        RHEL-Client-7.0, RHEL-Client-7.1:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_client
+
+        RHEL-Client-6.6:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_client
+
+        RHEL-Workstation-7.0, RHEL-Workstation-7.1:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_workstation
+
+        RHEL-Workstation-6.6:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_workstation
+
+        RHEL-ComputeNode-7.0, RHEL-ComputeNode-7.1:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_computenode
+
+        RHEL-ComputeNode-6.6:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_computenode
+

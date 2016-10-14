@@ -1,0 +1,13 @@
+variants:
+    - @prepare:
+        only unattended_install.cd.default_install.aio_native rh_kernel_update disable_win_update
+    - @block:
+        only autotest.iozone iozone_windows performance autotest.ffsb autotest.compilebench autotest.npb autotest.pktgen
+    - @nic:
+        only guest_test.autoit.web_bench
+    - @kernel:
+        only kernbench autotest.posixtest autotest.unixbench autotest.hackbench autotest.lmbench autotest.kernbench
+    - @cpu:
+        only autotest.rhts_linpack guest_test.autoit.super_pi guest_test.autoit.sandra
+    - @image_check:
+        only qemu_img_check

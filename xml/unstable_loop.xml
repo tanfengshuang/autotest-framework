@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<virtlab>
+    <job name="Unstable-loop-Daily" component="kvm" product="RHEV" need_reinstall="True" need_multiple_machine="True">
+        <machine profile="RHEL5-U4-x86_64-kvm-smp-minimal">intel-5504-12-1.englab.nay.redhat.com</machine>
+        <case name="ConfigureSoakTest">
+            <parameter name="category">unstable_loop</parameter>
+            <parameter name="imageformat">qcow2</parameter>
+            <parameter name="nicmodel">e1000</parameter>
+            <parameter name="driveformat">ide</parameter>
+            <parameter name="rhev">no</parameter>
+        </case>
+    </job>
+</virtlab>

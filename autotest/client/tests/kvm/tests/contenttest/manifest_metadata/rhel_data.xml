@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rhel>
+    <repoblacklist value='repoblacklist'>
+	<releaseversion value="7Server">
+	    <currentrelease value='7.1'>
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value='7Server'>
+                <arch value="x86_64">
+                    <repoid>
+                    	
+                    </repoid>
+                </arch>
+                <arch value="i386">
+                    <repoid>
+                    	
+                    </repoid>
+                </arch>
+            </currentrelease>
+	</releaseversion>
+	<releaseversion value="6Server">
+	    <currentrelease value='6.1'>
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value='6.2'>
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value='6.3'>
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value='6.4'>
+	        <arch value="x86_64">
+	            <repoid>
+	            	
+		    </repoid>
+	        </arch>
+	        <arch value="i386">
+	            <repoid>
+	            	
+	            </repoid>
+	        </arch>
+	    </currentrelease>
+	    <currentrelease value='6.5'>
+  	        <arch value="x86_64">
+		    <repoid>
+		    	
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+		    	
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value='6.6'>
+  	        <arch value="x86_64">
+		    <repoid>
+		    	
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+		    	
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value='6Server'>
+                <arch value="x86_64">
+                    <repoid>
+                    	
+                    </repoid>
+                </arch>
+                <arch value="i386">
+                    <repoid>
+                    	
+                    </repoid>
+                </arch>
+            </currentrelease>
+	</releaseversion>
+	<releaseversion value="5Server">
+	    <currentrelease value='5.7'>
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value='5.8'>
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value='5.11'>
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value='5Server'>
+  	        <arch value="x86_64">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+		<arch value="ia64">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	</releaseversion>
+	<releaseversion value="7Client">
+	    <currentrelease value="7.1">
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value="7Client">
+  	        <arch value="x86_64">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	</releaseversion>
+	<releaseversion value="6Client">
+	    <currentrelease value="6.1">
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value="6.2">
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value="6.3">
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			  
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+            <currentrelease value="6.4">
+                <arch value="x86_64">
+                    <repoid>
+
+                    </repoid>
+                </arch>
+                <arch value="i386">
+                    <repoid>
+
+                    </repoid>
+                </arch>
+            </currentrelease>
+            <currentrelease value="6.5">
+                <arch value="x86_64">
+                    <repoid>
+                    </repoid>
+                </arch>
+                <arch value="i386">
+                    <repoid>
+                    </repoid>
+                </arch>
+            </currentrelease>
+            <currentrelease value="6.6">
+                <arch value="x86_64">
+                    <repoid>
+                    </repoid>
+                </arch>
+                <arch value="i386">
+                    <repoid>
+                    </repoid>
+                </arch>
+            </currentrelease>
+	    <currentrelease value="6Client">
+  	        <arch value="x86_64">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	</releaseversion>
+	<releaseversion value="5Client">
+	    <currentrelease value="5.7">
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value="5.8">
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value="5.11">
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value="5Client">
+  	        <arch value="x86_64">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	</releaseversion>	
+	<releaseversion value="7Workstation">
+	    <currentrelease value="7.1">
+  	        <arch value="x86_64">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	   <currentrelease value="7Workstation">
+                <arch value="x86_64">
+                    <repoid>
+                    </repoid>
+                </arch>
+                <arch value="i386">
+                    <repoid>
+                    </repoid>
+                </arch>
+            </currentrelease>
+	</releaseversion>
+	<releaseversion value="6Workstation">
+	    <currentrelease value="6.1">
+  	        <arch value="x86_64">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value="6.2">
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value="6.3">
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+            <currentrelease value="6.4">
+                <arch value="x86_64">
+                    <repoid>
+
+                    </repoid>
+                </arch>
+                <arch value="i386">
+                    <repoid>
+
+                    </repoid>
+                </arch>
+            </currentrelease>
+	    <currentrelease value="6.5">
+  	        <arch value="x86_64">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value="6.6">
+  	        <arch value="x86_64">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	   <currentrelease value="6Workstation">
+                <arch value="x86_64">
+                    <repoid>
+                    </repoid>
+                </arch>
+                <arch value="i386">
+                    <repoid>
+                    </repoid>
+                </arch>
+            </currentrelease>
+	</releaseversion>
+	<releaseversion value="5Workstation">
+	    <currentrelease value="5.7">
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value="5.8">
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value="5.11">
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value="5Client">
+  	        <arch value="x86_64">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	</releaseversion>
+	<releaseversion value="7ComputeNode">
+	    <currentrelease value="7.1">
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value="7ComputeNode">
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	</releaseversion>
+	<releaseversion value="6ComputeNode">
+	    <currentrelease value="6.1">
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value="6.2">
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	    <currentrelease value="6.3">
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+            <currentrelease value="6.4">
+                <arch value="x86_64">
+                    <repoid>
+
+                    </repoid>
+                </arch>
+            </currentrelease>
+            <currentrelease value="6.5">
+                <arch value="x86_64">
+                    <repoid>
+
+                    </repoid>
+                </arch>
+            </currentrelease>
+            <currentrelease value="6.6">
+                <arch value="x86_64">
+                    <repoid>
+
+                    </repoid>
+                </arch>
+            </currentrelease>
+	    <currentrelease value="6ComputeNode">
+  	        <arch value="x86_64">
+		    <repoid>
+			
+		    </repoid>
+  	        </arch>
+	    </currentrelease>
+	</releaseversion>
+    </repoblacklist>
+</rhel>				

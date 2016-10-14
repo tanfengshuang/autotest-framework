@@ -1,0 +1,15 @@
+diff --git a/pts-core/phoronix-test-suite.php b/pts-core/phoronix-test-suite.php
+index 4348528..01651c8 100644
+--- a/pts-core/phoronix-test-suite.php
++++ b/pts-core/phoronix-test-suite.php
+@@ -172,8 +172,8 @@ for($i = 2; $i < $argc && isset($argv[$i]); $i++)
+ 
+ if(!QUICK_START)
+ {
+-	pts_user_agreement_check($sent_command);
+-	pts_client::user_hardware_software_reporting();
++//	pts_user_agreement_check($sent_command);
++//	pts_client::user_hardware_software_reporting();
+ }
+ 
+ pts_run_option_next($sent_command, $pass_args);

@@ -1,0 +1,15 @@
+variants:
+    - @prepare:
+        only unattended_install.cd.default_install.aio_native rh_kernel_update disable_win_update
+    - @mem_stress:
+        only autotest.dacapo autotest.dma_memtest autotest.stress_memory_heavy
+    - @block_stress:
+        only autotest.aiostress yonit_bitmap_benchmark autotest.posixtest
+    - @cpu_sress:
+        only autotest.interbench autotest.kernbench autotest.linpack autotest.perfmon autotest.rhts_linpack
+    - @system_stress:
+        only autotest.dbench autotest.ebizzy autotest.ffsb autotest.flail autotest.fsstress autotest.hackbench autotest.stress autotest.scrashme autotest.scrashme.fast autotest.fsfuzzer autotest.linus_stress autotest.phoronix
+    - @network_stress:
+        only netstress_kill_guest stress autotest.tbench autotest.lmbench
+
+test_timeout = 28800

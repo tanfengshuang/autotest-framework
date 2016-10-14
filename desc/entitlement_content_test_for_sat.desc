@@ -1,0 +1,20 @@
+variants:
+    - runcasein-guest:
+        RHEL-Server-6.5,RHEL-Server-6.4,RHEL-Server-6.3:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_server_sat
+
+    - runcasein-host:
+        RHEL-Server-6.5,RHEL-Server-6.4,RHEL-Server-6.3:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_server_sat
+
+        RHEL-Server-ppc64-6.5,RHEL-Server-6.4,RHEL-Server-6.3:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_server_sat
+
+        RHEL-Server-s390x-6.5,RHEL-Server-6.4,RHEL-Server-6.3:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_server_sat
+
+        RHEL-Server-7.0:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_server_sat
+
+        RHEL-Server-5.10:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_server_sat

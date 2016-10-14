@@ -1,0 +1,36 @@
+variants:
+    - runcasein-guest:
+        RHEL-Client-6.5,RHEL-Client-6.4,RHEL-Client-6.3,RHEL-Client-5.10,RHEL-Client-5.9,RHEL-Client-5.8:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_rhscl_for_client
+
+        RHEL-Server-6.5,RHEL-Server-6.4,RHEL-Server-6.3,RHEL-Server-5.10,RHEL-Server-5.9,RHEL-Server-5.8:   
+	    only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_rhscl_for_server
+
+        RHEL-Workstation-6.5,RHEL-Workstation-6.4,RHEL-Workstation-6.3,RHEL-Workstation-5.10,RHEL-Workstation-5.9,RHEL-Workstation-5.8:
+	    only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_rhscl_for_workstation
+            
+    - runcasein-host:
+        RHEL-Server-7.1,RHEL-Server-7.0: 
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_rhscl_for_server
+
+        RHEL-Workstation-7.1,RHEL-Workstation-7.0:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_rhscl_for_workstation
+
+        RHEL-Client-6.7,RHEL-Client-6.6,RHEL-Client-6.5,RHEL-Client-6.4,RHEL-Client-6.3:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_rhscl_for_client
+
+	RHEL-Client-5.10,RHEL-Client-5.9,RHEL-Client-5.8:
+            only tc_Setup_VM tc_content_rhscl_for_client
+
+        RHEL-Server-6.7,RHEL-Server-6.6,RHEL-Server-6.5,RHEL-Server-6.4,RHEL-Server-6.3:
+	    only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_rhscl_for_server
+
+	RHEL-Server-5.10,RHEL-Server-5.9,RHEL-Server-5.8:
+	    only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_rhscl_for_server
+
+        RHEL-Workstation-6.7,RHEL-Workstation-6.6,RHEL-Workstation-6.5,RHEL-Workstation-6.4,RHEL-Workstation-6.3:
+	    only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_rhscl_for_workstation
+
+	RHEL-Workstation-5.10,RHEL-Workstation-5.9,RHEL-Workstation-5.8:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_rhscl_for_workstation
+

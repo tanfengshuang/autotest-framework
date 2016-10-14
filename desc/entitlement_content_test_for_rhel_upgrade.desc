@@ -1,0 +1,32 @@
+variants:
+    - runcasein-guest:
+        RHEL-Client-6.4,RHEL-Client-6.3,RHEL-Client-5.9,RHEL-Client-5.8:
+            only unattended_install tc_Setup_VM tc_content_updateOS_client 
+
+        RHEL-ComputeNode-6.4,RHEL-ComputeNode-6.3,RHEL-ComputeNode-5.9,RHEL-ComputeNode-5.8:
+            only unattended_install tc_Setup_VM tc_content_updateOS_computenode 
+
+        RHEL-Server-6.4,RHEL-Server-6.3,RHEL-Server-5.9,RHEL-Server-5.8:   
+	    only unattended_install tc_Setup_VM tc_content_updateOS_server
+ 
+        RHEL-Workstation-6.4,RHEL-Workstation-6.3,RHEL-Workstation-5.9,RHEL-Workstation-5.8:
+            only unattended_install tc_Setup_VM  tc_content_updateOS_workstation 
+
+    - runcasein-host:
+        RHEL-Client-6.4,RHEL-Client-6.3,RHEL-Client-5.9,RHEL-Client-5.8:
+            only tc_Setup_VM tc_content_updateOS_client 
+
+        RHEL-ComputeNode-6.4,RHEL-ComputeNode-6.3,RHEL-ComputeNode-5.9,RHEL-ComputeNode-5.8:
+            only tc_Setup_VM tc_content_updateOS_computenode
+
+        RHEL-Server-6.4,RHEL-Server-6.3,RHEL-Server-5.9,RHEL-Server-5.8:   
+	    only tc_Setup_VM tc_content_updateOS_server
+
+        RHEL-Workstation-6.4,RHEL-Workstation-6.3,RHEL-Workstation-5.9,RHEL-Workstation-5.8:
+            only tc_Setup_VM  tc_content_updateOS_workstation
+
+        RHEL-Server-s390x-6.4,RHEL-Server-s390x-6.3,RHEL-Server-s390x-5.9,RHEL-Server-s390x-5.8:
+            only tc_Setup_VM tc_content_updateOS_s390x
+
+        RHEL-Server-ppc64-6.4,RHEL-Server-ppc64-6.3,RHEL-Server-ppc64-5.9,RHEL-Server-ppc64-5.8:
+            only tc_Setup_VM tc_content_updateOS_ppc64

@@ -1,0 +1,234 @@
+variants:
+    - runcasein-guest:
+
+    ###############################
+    #        Client VARIANT       #
+    ###############################
+
+        RHEL-Client-7.0, RHEL-Client-7.1:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_client
+
+        RHEL-Client-6.7, RHEL-Client-6.6, RHEL-Client-6.5, RHEL-Client-6.4, RHEL-Client-6.3, RHEL-Client-6.2, RHEL-Client-6.1:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_client
+
+        RHEL-Client-5.11, RHEL-Client-5.10, RHEL-Client-5.9, RHEL-Client-5.8, RHEL-Client-5.7:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_client
+
+
+    ###############################
+    #     ComputeNode VARIANT     #
+    ###############################
+
+        RHEL-ComputeNode-7.0, RHEL-ComputeNode-7.1:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_computenode
+
+        RHEL-ComputeNode-6.7, RHEL-ComputeNode-6.6, RHEL-ComputeNode-6.5, RHEL-ComputeNode-6.4, RHEL-ComputeNode-6.3, RHEL-ComputeNode-6.2, RHEL-ComputeNode-6.1:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_computenode tc_content_scalablefilesystem_for_computenode
+
+
+        ###################################################
+        # Additional test types:
+        ###################################################
+        #          
+        # tc_content_scalablefilesystem_for_computenode 
+        # tc_content_highperformancenetwork_for_computenode
+        #
+        ###################################################
+
+
+    ###############################
+    #         Everything          #
+    ###############################
+
+        RHEL-Everything-7.0:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_everything
+
+
+    ###############################
+    #        Server VARIANT       #
+    ###############################
+
+        RHEL-Server-7.0, RHEL-Server-7.1:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_server
+
+        RHEL-Server-6.7, RHEL-Server-6.6, RHEL-Server-6.5, RHEL-Server-6.4, RHEL-Server-6.3, RHEL-Server-6.2, RHEL-Server-6.1:   
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_server tc_content_highavailability tc_content_loadbalancer tc_content_resilientstorage tc_content_scalablefilesystem_for_server
+
+        RHEL-Server-5.11,RHEL-Server-5.10,RHEL-Server-5.9,RHEL-Server-5.8,RHEL-Server-5.7:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_server tc_content_highavailability tc_content_resilientstorage
+
+        ###################################################
+        # Additional test types:
+        ###################################################
+        #
+        # tc_content_highavailability
+        # tc_content_highperformancenetwork_for_server         
+        # tc_content_loadbalancer
+        # tc_content_resilientstorage
+        # tc_content_scalablefilesystem_for_server
+        #
+        ###################################################
+
+
+    ###############################
+    #     Workstation VARIANT     #
+    ###############################
+
+        RHEL-Workstation-7.0, RHEL-Workstation-7.1:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_workstation tc_content_scalablefilesystem_for_workstation
+
+        RHEL-Workstation-6.7, RHEL-Workstation-6.6, RHEL-Workstation-6.5, RHEL-Workstation-6.4, RHEL-Workstation-6.3, RHEL-Workstation-6.2, RHEL-Workstation-6.1:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_workstation tc_content_scalablefilesystem_for_workstation
+
+        RHEL-Workstation-5.11, RHEL-Workstation-5.10, RHEL-Workstation-5.9, RHEL-Workstation-5.8, RHEL-Workstation-5.7:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_workstation
+
+        ###################################################
+        # Additional test types:
+        ###################################################
+        #
+        # tc_content_legacy_desktop (repos have been covered by other products, keep them here.)
+        # tc_content_highperformancenetwork_for_server
+        # tc_content_sap
+        # tc_content_hightouchbeta 
+        # tc_content_12X5L3_upto2_socket 
+        # tc_content_platform_standard_L3_unlimited_sockets
+        # tc_content_server_rhui 
+        # tc_content_cloudforms (repos have been covered by other products, keep them here.)
+        #
+        ###################################################
+
+
+            
+    - runcasein-host:
+
+    ###############################
+    #        Client VARIANT       #
+    ###############################
+
+    	RHEL-Client-7.0, RHEL-Client-7.1, RHEL-Client-7.2:
+    	    only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_client
+
+        RHEL-Client-6.7, RHEL-Client-6.6, RHEL-Client-6.5, RHEL-Client-6.4, RHEL-Client-6.3, RHEL-Client-6.2, RHEL-Client-6.1:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_client
+
+        RHEL-Client-5.11, RHEL-Client-5.10, RHEL-Client-5.9, RHEL-Client-5.8, RHEL-Client-5.7:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_client
+
+
+    ###############################
+    #     ComputeNode VARIANT     #
+    ###############################
+
+        RHEL-ComputeNode-7.0, RHEL-ComputeNode-7.1, RHEL-ComputeNode-7.2:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_computenode
+
+        RHEL-ComputeNode-6.7, RHEL-ComputeNode-6.6, RHEL-ComputeNode-6.5,RHEL-ComputeNode-6.4,RHEL-ComputeNode-6.3,RHEL-ComputeNode-6.2,RHEL-ComputeNode-6.1:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_computenode tc_content_scalablefilesystem_for_computenode
+
+        ###################################################
+        # Additional test types:
+        ###################################################
+        #          
+        # tc_content_scalablefilesystem_for_computenode 
+        # tc_content_highperformancenetwork_for_computenode 
+        #
+        ###################################################
+
+
+    ###############################
+    #         Everything          #
+    ###############################
+
+    	RHEL-Everything-7.0:
+    	    only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_everything
+
+        RHEL-Everything-ppc64-7.0:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_ppc64
+
+        RHEL-Everything-s390x-7.0:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_s390x
+
+        RHEL-Everything-ia64-7.0:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_ia64
+
+
+    ###############################
+    #        Server VARIANT       #
+    ###############################
+
+        RHEL-Server-7.0, RHEL-Server-7.1, RHEL-Server-7.2: 
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_server tc_content_highavailability tc_content_resilientstorage tc_content_saphana tc_content_rhel_for_realtime
+            
+        RHEL-Server-s390x-7.0, RHEL-Server-s390x-7.1, RHEL-Server-s390x-7.2:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_s390x tc_content_resilientstorage_for_s390x tc_content_highavailability_for_s390x
+
+        RHEL-Server-ppc64-7.0, RHEL-Server-ppc64-7.1, RHEL-Server-ppc64-7.2:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_ppc64
+
+        RHEL-Server-ppc64le-7.1, RHEL-Server-ppc64le-7.2:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_ppc64le
+
+        RHEL-Server-aarch64-7.1, RHEL-Server-aarch64-7.2:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_aarch64
+
+        RHEL-Server-ia64-7.0, RHEL-Server-ia64-7.1:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_ia64
+
+        RHEL-Server-6.7, RHEL-Server-6.6, RHEL-Server-6.5, RHEL-Server-6.4, RHEL-Server-6.3, RHEL-Server-6.2, RHEL-Server-6.1:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_server tc_content_sap tc_content_highavailability tc_content_loadbalancer tc_content_resilientstorage tc_content_scalablefilesystem_for_server
+
+        RHEL-Server-ppc64-6.7, RHEL-Server-ppc64-6.6, RHEL-Server-ppc64-6.5, RHEL-Server-ppc64-6.4, RHEL-Server-ppc64-6.3, RHEL-Server-ppc64-6.2, RHEL-Server-ppc64-6.1:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_ppc64
+
+        RHEL-Server-s390x-6.7, RHEL-Server-s390x-6.6, RHEL-Server-s390x-6.5, RHEL-Server-s390x-6.4, RHEL-Server-s390x-6.3, RHEL-Server-s390x-6.2, RHEL-Server-s390x-6.1:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_s390x
+
+        RHEL-Server-5.11, RHEL-Server-5.10, RHEL-Server-5.9, RHEL-Server-5.8, RHEL-Server-5.7:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_server tc_content_highavailability tc_content_resilientstorage
+        
+        RHEL-Server-ia64-5.11, RHEL-Server-ia64-5.10, RHEL-Server-ia64-5.9, RHEL-Server-ia64-5.8, RHEL-Server-ia64-5.7:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_ia64 tc_content_highavailability tc_content_resilientstorage
+        
+        RHEL-Server-ppc64-5.11, RHEL-Server-ppc64-5.10, RHEL-Server-ppc64-5.9, RHEL-Server-ppc64-5.8, RHEL-Server-ppc64-5.7:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_ppc64 tc_content_highavailability tc_content_resilientstorage
+
+        RHEL-Server-s390x-5.11, RHEL-Server-s390x-5.10, RHEL-Server-s390x-5.9, RHEL-Server-s390x-5.8, RHEL-Server-s390x-5.7:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_s390x
+
+        ###################################################
+        # Additional test types:
+        ###################################################
+        #
+        # tc_content_highavailability
+        # tc_content_loadbalancer
+        # tc_content_resilientstorage
+        # tc_content_loadbalancer
+        # tc_content_scalablefilesystem_for_server
+        # tc_content_highperformancenetwork_for_server 
+        #
+        ###################################################
+
+
+    ###############################
+    #     Workstation VARIANT     #
+    ###############################
+
+        RHEL-Workstation-7.0, RHEL-Workstation-7.1, RHEL-Workstation-7.2:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_workstation
+
+        RHEL-Workstation-6.7, RHEL-Workstation-6.6, RHEL-Workstation-6.5, RHEL-Workstation-6.4, RHEL-Workstation-6.3, RHEL-Workstation-6.2, RHEL-Workstation-6.1:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_workstation tc_content_scalablefilesystem_for_workstation
+
+        RHEL-Workstation-5.11, RHEL-Workstation-5.10, RHEL-Workstation-5.9, RHEL-Workstation-5.8, RHEL-Workstation-5.7:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_workstation
+
+        ###################################################
+        # Additional test types:
+        ###################################################
+        #
+        # tc_content_scalablefilesystem_for_workstation 
+        #
+        ###################################################
+
+

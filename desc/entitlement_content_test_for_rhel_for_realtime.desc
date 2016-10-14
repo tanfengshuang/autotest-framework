@@ -1,0 +1,9 @@
+variants:
+    - runcasein-guest:
+	RHEL-Server-7.1:
+	    only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_rhel_for_realtime
+
+    - runcasein-host:
+	RHEL-Server-7.1:
+	    only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_rhel_for_realtime
+

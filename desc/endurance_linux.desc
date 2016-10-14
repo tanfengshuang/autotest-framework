@@ -1,0 +1,11 @@
+variants:
+    - @pre_image:
+        only unattended_install.cd.default_install.aio_native
+    - @kernel_update:
+        only rh_kernel_update
+    - @fuzz:
+        only iofuzz
+    - @stressing:
+	only autotest
+
+test_timeout = 28800

@@ -1,0 +1,4 @@
+Step:
+1.local run parse_reference_standard.py with your docspace username and password,this script will generate file 'Reference_standard.txt'.
+2.git push Reference_standard.txt file to ../skutest/
+3.run job

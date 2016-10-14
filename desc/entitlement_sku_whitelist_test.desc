@@ -1,0 +1,21 @@
+variants:
+
+    - runcasein-guest:
+
+        RHEL-Client-6.2,RHEL-Client-6.3,RHEL-Client-6.4:
+            only unattended_install tc_Setup_VM tc_SKU_whitelist
+
+        RHEL-ComputeNode-6.2,RHEL-ComputeNode-6.3,RHEL-ComputeNode-6.4:
+            only unattended_install tc_Setup_VM tc_SKU_whitelist
+
+        RHEL-Server-6.2,RHEL-Server-6.3,RHEL-Server-6.4:
+            only unattended_install tc_Setup_VM tc_SKU_whitelist
+
+        RHEL-Workstation-6.2,RHEL-Workstation-6.3,RHEL-Workstation-6.4:
+            only unattended_install tc_Setup_VM tc_SKU_whitelist
+
+    - runcasein-host:
+
+	RHEL-Server-6.2,RHEL-Server-6.3,RHEL-Server-6.4:
+	    only tc_Setup_VM tc_SKU_whitelist	
+

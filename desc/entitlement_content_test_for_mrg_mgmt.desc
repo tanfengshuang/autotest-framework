@@ -1,0 +1,15 @@
+variants:
+    - runcasein-guest:
+        RHEL-Server-6.6,RHEL-Server-6.5,RHEL-Server-6.4,RHEL-Server-6.3:
+	    only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_mrgmgmt_for_server
+
+        RHEL-ComputeNode-6.6, RHEL-ComputeNode-6.5,RHEL-ComputeNode-6.4,RHEL-ComputeNode-6.3:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_mrgmgmt_for_computenode
+
+    - runcasein-host:
+        RHEL-Server-6.6,RHEL-Server-6.5,RHEL-Server-6.4,RHEL-Server-6.3:
+	    only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_mrgmgmt_for_server
+
+        RHEL-ComputeNode-6.6, RHEL-ComputeNode-6.5,RHEL-ComputeNode-6.4,RHEL-ComputeNode-6.3:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_mrgmgmt_for_computenode
+

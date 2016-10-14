@@ -1,0 +1,198 @@
+STAF-KVM: A kvm-autotest staf front-end.
+
+1. Introduction
+
+Staf-kvm is a front-end of kvm-autotest client which could be used to initiate
+single or suite of tests from command line.
+
+The design goal of staf-kvm is as follows:
+[1] eliminate the effort of maintaining kvm_test.cfg
+[2] make the client-end of kvm-autotest could be run under STAF framework
+[3] simplify the manual testing efforts
+
+2. Setup
+
+[1] Fetch the sources of kvm-autotest
+Staf-kvm depends on the kvm-autotest to run. So the first thing is to clone
+kvm-autoest sources from our git repo:
+# git clone git://10.66.82.200/autotest
+
+[2] Fetch the sources of staf-kvm-devel
+# git clone git://10.66.82.200/staf-kvm-devel
+
+[3] Make a symlink to kvm-autotest
+# ln -s {your kvm-autoest directory}/client {your staf-kvm directory}/kvm-test
+
+[4] Add bridge on host
+You can also use already existed bridge by --bridge=virbr0, we need to disable
+the stp and set the forwarding delay to zero in qemu-ifup script.
+
+#!/bin/bash
+#ifcfg-eth0
+sed -i 's/^BOOTPROTO=dhcp$/BOOTPROTO=none/g' /etc/sysconfig/network-scripts/ifcfg-eth0
+echo "BRIDGE=switch">>/etc/sysconfig/network-scripts/ifcfg-eth0
+#ifcfg-br0
+echo "DEVICE=switch
+BOOTPROTO=dhcp
+ONBOOT=yes
+TYPE=Bridge">>/etc/sysconfig/network-scripts/ifcfg-br0
+/etc/init.d/network restart
+
+3. Usage
+
+[1] Current test drivers:
+
+ConfigTest.py : Single running test driver which is used to launch single tests.
+ConfigLoop.py : Test suite driver which is used to launch a series of tests.
+Long.py : Driver for launch a long time tests.
+import.py : Driver which is used to import local result to Virtlab.
+RegressionTest.py : Driver for launch a series of regression test.
+ReserveMachine.py : Driver which is used to reserve machine in Virtlab.
+
+Also, you could write your own test driver :). And we really need you to do this.
+
+[2] option format
+# python ConfigTest.py --{key}={value}  --{key}={value} --{key}={value}
+
+A sample of running the boot 100 times of RHEL-Servder-5.3 32bit:
+# python ConfigTest.py --testcase=boot --guestname=RHEL-Server-5.3 \
+--platform=32 --clone=yes --nrepeat=100 --ins=1
+
+[3] params reference for both ConfigLoop.py and ConfigTest.py:
+    
+    All the params has a default value, you could investigate "dict_template"
+    in wrapper.py for defualt values.
+
+    --category={test suites}: this option specifies the testsuite to be executed.
+    Only valid for ConfigLoop.py The name for testsuite correspond to the
+    description files (*.desc) located in the desc/ subdirectory.
+
+    --testcase={test name} : this option specifies the test name to be executed.
+    Current availabe test cases could be found in the file of virtlab_test.cfg
+    which lies in the directory of kvm-autotest. Only valid for ConfigTest.py.
+    All the testname is grabbed from virtlab_test.cfg in the kvm directory.
+    You could consult "Tests variants" in virtlab_tests.cfg for all
+    the test names.
+
+    Following is some common testcases:
+    boot: boot the vm
+    reboot: reboot the vm
+    mig2.noload.round_def: do 1 round of ping-pong migration    
+    linux_s3: suspend the vm to the acpi power state s3
+    mig2.load.dbench: ping-pong migration with dbench background load
+    .....
+
+    --mem={memory size(MB)}: this option specifies the memory size. Only valid
+    for ConfigTest.py
+
+    --vcpu={vcup number}: this option specifies the number of vcpu. Only valid
+    for ConfigTest.py
+    
+    --guestname={guest operation name}: this option specifies the name of guest
+    operating systems. All the guestname name is drived from virtlab_test.cfg,
+    you could consult it for the details.
+    
+    Guest operation systems current support:
+    RHEL-Server-6.0
+    RHEL-Server-5.6
+    RHEL-4.9
+    RHEL-3.9
+    WinXP ( only 32 bit are supported )
+    Win2003
+    Win2008
+    Win2008r2 ( only 64 bit are supported )
+    Win7
+    Linux - All kind of Linux guests
+    Windows - All kind of Windows guests
+
+    --platform={guest platform}: this option specifies the platform/arch of
+    guest operation systems.
+    Current support platform/arch:
+    32: legacy 32bit kernel
+    PAE: PAE kernel. This option is invalid for all Windows guests:
+    64: 64bit kernel
+    all: all kinds of platform
+
+    --clone={yes|no}: if 'yes' is specified, the scripts would copy a fresh
+    image of targert guest form NFS server. This is useful when runing the
+    test for the first time. If you have already had the corresponding guest
+    images. You could use 'no' here.
+
+    --nicmodel={rtl8139|e1000|virtio_nic|all}: the option specifies the nic
+    model you used in the test
+
+    --driveformat={ide|virtio_blk}: this option specifies the driver fromt
+    of guests
+
+    --nrepeat={repetead times}: this option specifies the repeated times of
+    sing test cases
+
+    --login_timetout={timeout variable(second)}: this option specifies the
+    timeout of login guest
+
+    --ipfix={yes|no}: this option specifies whether use the fixing of ip
+    address. When running in virtlab, script could automaticallly detect
+    the dst machine (migration) through nslookup. But when running in the
+    working machine of office, you should use 'no' and pass the dst ip
+    through command line.
+
+    --dsthost={dest machine ip} 
+    --srchost={src machine ip}  these two options specifies the
+    dsthost/srchost ip when doing migration tests. Only valid when ipfix=no
+    
+    --network={user|bridge}: the option specifies whether use user mode
+    stack(user) or TAP networking(bridge)
+
+    --dryrun={yes|no}: if the dryrun was set to 'yes', only the shortname of
+    the testcases were shown rather than executed.
+
+    --verbose={yes|no}: if verbose was set to 'yes', the "--verbose" option
+    was passed to autotest client in order to get the verbose output for
+    debugging.
+
+    --virtlab={yes|no}: this option specifies whether submit job by virtlab
+    CLI with the staf parameters.
+
+    --user={user name}: it's used to specify user when submit jobs by CLI,
+    default using the current system user.
+
+    --tree={git tree address}: it's used to specify autotest git tree.
+
+    --tags={machine tags}: default tags are 'VT,KVM_TEST'
+
+    --profile={profile name}: submit job with this profile, default using
+    latest kvm profile.
+
+4. Some examples:
+
+1) a main_loop test for all kind of windows guests
+# python ConfigLoop.py --guetsname=Windows --platform=all \
+--category=main_loop --clone=yes
+
+2) a function_loop test for all PAE Linux, and does not clone
+   image from NFS and use autotest style log.
+# python ConfigLoop.py --guestname=Linux  --platform=PAE \
+--category=function_loop --clone=no --logstyle=autotest
+
+3) a single cases of migration of Win2008-64 guest with 8192 M ram and 8 vcpu and
+   repeat 100 times with two instances running in parallel (does not use ipfix)
+# python ConfigTest.py --guestname=Win2008 --platform=64 \
+--testcase=mig2.noload.round_def --mem=8192 --vcpu=8 --ins=2 --clone=yes \
+--ipfix=no --srchost=10.0.0.2 --dsthost=10.0.0.3 --nrepeat=100 --logstyle=autotest
+
+5. STAF-KVM internals
+
+ConfigLoop.py and ConfigTest.py is in charge of generating fixup strings
+(such as "only RHEL-Server-5.3") from the command line. A control file in the
+kvm-autoest (control_virtlab) receive these fixup string and parse them when the
+total configuration has been parsed(virtlab_test.cfg). In this way, control_virtlab
+could generate a subset of all test cases and do the testing.
+
+6. Feedback & Bugs
+
+Please challange me directly through jasowang@redhat.com. :)   
+    		       	    
+
+
+
+

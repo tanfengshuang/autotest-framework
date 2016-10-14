@@ -1,0 +1,17 @@
+<virtlab>
+    <job name="Weekly testing-3.9function_all" product="RHEV" component="kvm-new" need_reboot="true|false|yes|no" need_reinstall="true|false|yes|no" need_multiple_machine="true|false|yes|no" secret_key="password">
+        <summary>This is the summary</summary>
+        <profile>RHEL5-U4-x86_64-kvm-83-154-smp-minimal</profile>
+        <machine>intel-6660-2-1.englab.nay.redhat.com</machine>
+        <slave_profile>RHEL5-U4-x86_64-kvm-83-139-smp-minimal</slave_profile>
+
+        <tags>SINGLE VT</tags>
+        <case name="ConfigureSoakTest">
+            <parameter name="guestname">RHEL-3.9</parameter>
+            <parameter name="category">function_all</parameter>
+            <parameter name="imageformat">qcow2</parameter>
+            <parameter name="nicmodel">virtio_nic</parameter>
+            <parameter name="driveformat">virtio_blk</parameter>
+        </case>
+    </job>
+</virtlab>

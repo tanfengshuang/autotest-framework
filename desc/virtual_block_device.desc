@@ -1,0 +1,71 @@
+variants:
+    - @prepare:
+        only unattended_install.cd.default_install rh_kernel_update disable_win_update
+    - @functional:
+        only autotest.pktgen autotest.posixtest autotest.bonnie autotest.cerberus autotest.disktest guest_test.autoit.disk_dfrg ioquit format_disk block_hotplug floppy cdrom fillup_disk lvm multi_disk change_media eject_media readonly_floppy usb yonit_bitmap_benchmark
+    - @performance:
+        only autotest.perfmon autotest.iozone autotest.dbench hdparm autotest.posixtest autotest.tbench autotest.tiobench autotest.interbench autotest.parallel_dd autotest.aiostress autotest.aiostress autotest.ctcs
+    - @image_check:
+        only qemu_img_check
+    - @multi_disk_install:
+        only unattended_install.cd.multi_disk_install 
+    - @multi_disk_boot:
+        force_create_image = no
+        no ide
+        images += " stg stg2 stg3 stg4 stg5 stg6 stg7 stg8 stg9 stg10 stg11 stg12 stg13 stg14 stg15 stg16 stg17 stg18 stg19 stg20 stg21 stg22 stg23 stg24"
+        image_name_stg = images/storage
+        image_name_stg2 = images/storage2
+        image_name_stg3 = images/storage3
+        image_name_stg4 = images/storage4
+        image_name_stg5 = images/storage5
+        image_name_stg6 = images/storage6
+        image_name_stg7 = images/storage7
+        image_name_stg8 = images/storage8
+        image_name_stg9 = images/storage9
+        image_name_stg10 = images/storage10
+        image_name_stg11 = images/storage11
+        image_name_stg12 = images/storage12
+        image_name_stg13 = images/storage13
+        image_name_stg14 = images/storage14
+        image_name_stg15 = images/storage15
+        image_name_stg16 = images/storage16
+        image_name_stg17 = images/storage17
+        image_name_stg18 = images/storage18
+        image_name_stg19 = images/storage19
+        image_name_stg20 = images/storage20
+        image_name_stg21 = images/storage21
+        image_name_stg22 = images/storage22
+        image_name_stg23 = images/storage23
+        image_name_stg24 = images/storage24
+        image_name_stg25 = images/storage25
+        image_boot_stg = no
+        image_boot_stg2 = no
+        image_boot_stg3 = no
+        image_boot_stg4 = no
+        image_boot_stg5 = no
+        image_boot_stg6 = no
+        image_boot_stg7 = no
+        image_boot_stg8 = no
+        image_boot_stg9 = no
+        image_boot_stg10 = no
+        image_boot_stg11 = no
+        image_boot_stg12 = no
+        image_boot_stg13 = no
+        image_boot_stg14 = no
+        image_boot_stg15 = no
+        image_boot_stg16 = no
+        image_boot_stg17 = no
+        image_boot_stg18 = no
+        image_boot_stg19 = no
+        image_boot_stg20 = no
+        image_boot_stg21 = no
+        image_boot_stg22 = no
+        image_boot_stg23 = no
+        image_boot_stg24 = no
+        image_boot_stg25 = no
+        variants:
+            - @Linux:
+                images += " stg25"
+                only boot
+            - @Windows:
+                only boot

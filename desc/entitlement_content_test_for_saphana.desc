@@ -1,0 +1,8 @@
+variants:
+    - runcasein-guest:
+        RHEL-Server-6.5:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_saphana
+            
+    - runcasein-host:
+        RHEL-Server-6.5:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_saphana

@@ -1,0 +1,4 @@
+Alias /new_tko "/usr/local/autotest/frontend/client/www/autotest.TkoClient"
+<Location "/new_tko">
+    DirectoryIndex TkoClient.html
+</Location>

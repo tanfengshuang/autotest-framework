@@ -1,0 +1,25 @@
+variants:
+    - @pre_image:
+        only unattended_install.cd.default_install
+    - @kernel_update:
+        only rh_kernel_update
+    - @disable_update:
+        only disable_win_update
+    - @basic:
+        only boot reboot shutdown check_unhalt_vcpu
+    - @cpu_clustering:
+        only cpuflags physical_resources_check nx
+    - @virtual_block_device:
+        only cdrom lvm.lvm_create block_hotplug.fmt_qcow2.block_virtio
+    - @virtual_nic_device:
+        only ping multicast file_transfer netperf netperf2 ethtool mac_change nic_promisc jumbo
+    - @migration:
+        only migrate.default.tcp migrate.default.exec migrate.default.mig_cancel
+    - @transparent_huge_page:
+        only trans_hugepage.base trans_hugepage.defrag
+    - @ksm:
+        only ksm_base.base
+    - @qcow2_test:
+        only qemu_disk_img.convert_test.to_qcow2 qemu_disk_img.rebase_test.scenerio1 qemu_disk_img.commit_test qemu_io fillup_disk
+    - @post_check:
+        only qemu_img_check

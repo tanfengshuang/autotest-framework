@@ -1,0 +1,11 @@
+variants:
+    - runcasein-guest:
+	RHEL-ComputeNode-6.5,RHEL-ComputeNode-6.4,RHEL-ComputeNode-6.3,RHEL-ComputeNode-6.2,RHEL-ComputeNode-6.1:
+	    only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_eus_for_computenode
+
+
+    - runcasein-host:
+	RHEL-ComputeNode-6.5,RHEL-ComputeNode-6.4,RHEL-ComputeNode-6.3,RHEL-ComputeNode-6.2,RHEL-ComputeNode-6.1:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_eus_for_computenode
+
+

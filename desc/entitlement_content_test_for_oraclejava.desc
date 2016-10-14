@@ -1,0 +1,51 @@
+variants:
+    - runcasein-guest:
+        RHEL-Client-6.5:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_oraclejava_for_client
+
+        RHEL-Client-5.10:
+            only unattended_install tc_Setup_VM tc_content_oraclejava_for_client
+
+        RHEL-Server-6.5,RHEL-Server-6.4,RHEL-Server-6.3:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_oraclejava_for_server
+
+        RHEL-Server-5.10,RHEL-Server-5.9:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_oraclejava_for_server
+
+        RHEL-Workstation-6.5:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_oraclejava_for_workstation
+
+        RHEL-ComputeNode-6.5,RHEL-ComputeNode-6.4,RHEL-ComputeNode-6.3:
+            only unattended_install tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_oraclejava_for_computenode
+            
+    - runcasein-host:
+        RHEL-Client-6.5:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_oraclejava_for_client
+
+        RHEL-Client-5.10:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_oraclejava_for_client
+
+        RHEL-Server-6.5,RHEL-Server-6.4,RHEL-Server-6.3:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_oraclejava_for_server
+
+        RHEL-Server-5.10,RHEL-Server-5.9:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_oraclejava_for_server
+
+        RHEL-Workstation-6.5:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_oraclejava_for_workstation
+
+        RHEL-ComputeNode-6.5,RHEL-ComputeNode-6.4,RHEL-ComputeNode-6.3:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_oraclejava_for_computenode
+
+	RHEL-Workstation-7.0:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_oraclejava_for_workstation
+
+        RHEL-ComputeNode-7.0:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_oraclejava_for_computenode
+
+	RHEL-Server-7.0:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_oraclejava_for_server
+
+	RHEL-Client-7.0:
+            only tc_Setup_VM tc_Setup_Content_parse_repo_manifest tc_content_oraclejava_for_client
+

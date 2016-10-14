@@ -1,0 +1,84 @@
+;SetupMgrTag
+[Data]
+    AutoPartition=1
+    MsDosInitiated="0"
+    UnattendedInstall="Yes"
+
+[Unattended]
+    Repartition=Yes
+    UnattendMode=FullUnattended
+    OemSkipEula=Yes
+    OemPreinstall=No
+    TargetPath=\WINDOWS
+    UnattendSwitch=Yes
+    CrashDumpSetting=1
+    DriverSigningPolicy=ignore
+    OemPnPDriversPath="KVM_TEST_NETWORK_DRIVER_PATH"
+    WaitForReboot=no
+
+[GuiUnattended]
+    AdminPassword="1q2w3eP"
+    EncryptedAdminPassword=NO
+    TimeZone=85
+    OemSkipWelcome=1
+    AutoLogon=Yes
+    AutoLogonCount=1000
+    OEMSkipRegional=1
+
+[UserData]
+    ProductKey=KVM_TEST_CDKEY
+    FullName="Autotest Mindless Drone"
+    OrgName="Autotest"
+    ComputerName=*
+
+[Identification]
+    JoinWorkgroup=WORKGROUP
+
+[Networking]
+    InstallDefaultComponents=Yes
+
+[Proxy]
+    Proxy_Enable=0
+    Use_Same_Proxy=0
+
+[Components]
+    dialer=off
+    media_clips=off
+    media_utopia=off
+    msnexplr=off
+    netoc=off
+    OEAccess=off
+    templates=off
+    WMAccess=off
+    zonegames=off
+
+[TerminalServices]
+    AllowConnections=1
+
+[WindowsFirewall]
+    Profiles=WindowsFirewall.TurnOffFirewall
+
+[WindowsFirewall.TurnOffFirewall]
+    Mode=0
+
+[Branding]
+    BrandIEUsingUnattended=Yes
+
+[Display]
+    Xresolution=1024
+    YResolution=768
+
+[GuiRunOnce]
+   Command0="cmd /c KVM_TEST_VIRTIO_NETWORK_INSTALLER"
+   Command1="cmd /c E:\autoit3.exe  E:\git\git.au3"
+   Command2="cmd /c E:\cfg\screensave.bat"
+   Command3="cmd /c E:\cfg\use_pmtmr.bat"
+   Command4="cmd /c netsh interface ip set address local dhcp"
+   Command5="cmd /c E:\devcon\wxp_x86\devcon.exe install E:\Balloon\WXp\x86\balloon.inf PCI\VEN_1AF4^&DEV_1002^&SUBSYS_00051AF4^&REV_00^\3^&13C0B0C5^&0^&30"
+   Command6="cmd /c E:\devcon\wxp_x86\devcon.exe install E:\QXL-Driver\WinXp32\qxl.inf PCI\VEN_1B36^&DEV_0100^&SUBSYS_11001AF4^&REV_01^\3^&13C0B0C5^&0^&18"
+   Command7="cmd /c E:\setuprss.bat"
+   Command8="cmd /c start /wait E:\dotnetfx35.exe /lang:ENU /norestart /passive"
+   Command9="cmd /c E:\setupsp.bat"
+   Command10="cmd /c sc config tlntsvr start= auto"
+   Command11="cmd /c net start telnet"
+   Command12="cmd /c A:\finish.exe"

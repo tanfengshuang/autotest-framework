@@ -1,0 +1,14 @@
+diff -Nubr src/examples/profile_everything src-time/examples/profile_everything
+--- src/examples/profile_everything	2008-10-28 04:17:05.000000000 +0800
++++ src-time/examples/profile_everything	2010-06-28 18:15:17.000000000 +0800
+@@ -1,8 +1,8 @@
+ directio	= 0
+-time		= 10
++time		= 120
+ 
+ [filesystem]
+-	location	= /mnt/test1
++	location	= /mnt/fstest
+ 
+ 	num_dirs	= 100
+ 

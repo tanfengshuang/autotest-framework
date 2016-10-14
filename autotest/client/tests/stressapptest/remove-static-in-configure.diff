@@ -1,0 +1,13 @@
+diff --git a/configure b/configure
+index 59d076e..8e90ce2 100755
+--- a/configure
++++ b/configure
+@@ -6032,7 +6032,7 @@ fi
+ # We'll check that they work, and fail otherwise.
+ # In the future we may provide for testing alternate
+ # arguments, but that's not necessary now.
+-LIBS="$LIBS -static -lrt -pthread -laio"
++LIBS="$LIBS -lrt -pthread -laio"
+ 
+ # Checking for pthreads
+ pthread_arg="not_available"

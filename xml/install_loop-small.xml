@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<virtlab>
+    <job name="KVM-install_loop-big-virtio-linux" component="kvm" product="RHEV" need_reinstall="True">
+        <machine profile="RHEL5-U4-x86_64-kvm-smp-minimal">intel-5504-12-1.englab.nay.redhat.com</machine>
+        <case name="ConfigureSoakTest">
+            <parameter name="guestname">Linux</parameter>
+            <parameter name="platform">all</parameter>
+            <parameter name="category">install_loop</parameter>
+            <parameter name="nicmodel">virtio_nic</parameter>
+            <parameter name="driveformat">virtio_blk</parameter>
+            <parameter name="hosttype">big</parameter>
+            <parameter name="ksm">1</parameter>
+            <parameter name="imageformat">raw</parameter>
+            <parameter name="snapshot">no</parameter>
+            <parameter name="rhev">no</parameter>
+            <parameter name="network">bridge</parameter>
+            <parameter name="bridge">switch</parameter>
+            <parameter name="mig_timeout">200</parameter>
+        </case>
+    </job>
+    <job name="KVM-install_loop-big-virtio-windows" component="kvm" product="RHEV" need_reinstall="True">
+        <machine profile="RHEL5-U4-x86_64-kvm-smp-minimal">intel-5504-12-1.englab.nay.redhat.com</machine>
+        <case name="ConfigureSoakTest">
+            <parameter name="guestname">Windows</parameter>
+            <parameter name="platform">all</parameter>
+            <parameter name="category">install_loop</parameter>
+            <parameter name="nicmodel">virtio_nic</parameter>
+            <parameter name="driveformat">ide</parameter>
+            <parameter name="hosttype">big</parameter>
+            <parameter name="ksm">1</parameter>
+            <parameter name="imageformat">raw</parameter>
+            <parameter name="snapshot">no</parameter>
+            <parameter name="rhev">no</parameter>
+            <parameter name="network">bridge</parameter>
+            <parameter name="bridge">switch</parameter>
+            <parameter name="mig_timeout">200</parameter>
+        </case>
+    </job>
+    <job name="KVM-install_loop-big-e1000-all" component="kvm" product="RHEV" need_reinstall="True">
+        <machine profile="RHEL5-U4-x86_64-kvm-smp-minimal">intel-5504-12-1.englab.nay.redhat.com</machine>
+        <case name="ConfigureSoakTest">
+            <parameter name="guestname">all</parameter>
+            <parameter name="platform">all</parameter>
+            <parameter name="category">install_loop</parameter>
+            <parameter name="nicmodel">e1000</parameter>
+            <parameter name="driveformat">ide</parameter>
+            <parameter name="hosttype">big</parameter>
+            <parameter name="ksm">1</parameter>
+            <parameter name="imageformat">raw</parameter>
+            <parameter name="snapshot">no</parameter>
+            <parameter name="rhev">no</parameter>
+            <parameter name="network">bridge</parameter>
+            <parameter name="bridge">switch</parameter>
+            <parameter name="mig_timeout">200</parameter>
+        </case>
+    </job>
+</virtlab>

@@ -1,0 +1,48 @@
+variants:
+    - runcasein-guest:
+        RHEL-Client-6.5,RHEL-Client-6.4,RHEL-Client-6.3,RHEL-Client-6.2,RHEL-Client-6.1,RHEL-Client-5.9, RHEL-Client-5.10,RHEL-Client-5.8,RHEL-Client-5.7:
+            only unattended_install tc_Setup_Content_parse_repo_manifest  tc_content_client
+
+        RHEL-ComputeNode-6.5,RHEL-ComputeNode-6.4,RHEL-ComputeNode-6.3,RHEL-ComputeNode-6.2,RHEL-ComputeNode-6.1:
+            only unattended_install tc_Setup_Content_parse_repo_manifest tc_content_computenode
+
+        RHEL-Server-6.5,RHEL-Server-6.4,RHEL-Server-6.3,RHEL-Server-6.2,RHEL-Server-6.1:
+            only unattended_install tc_Setup_Content_parse_repo_manifest tc_content_server
+
+	RHEL-Server-5.11,RHEL-Server-5.10,RHEL-Server-5.9,RHEL-Server-5.10,RHEL-Server-5.8,RHEL-Server-5.7:   
+            only unattended_install tc_Setup_Content_parse_repo_manifest tc_content_server
+
+        RHEL-Workstation-6.5,RHEL-Workstation-6.4,RHEL-Workstation-6.3,RHEL-Workstation-6.2,RHEL-Workstation-6.1:
+	    only unattended_install tc_Setup_Content_parse_repo_manifest tc_content_workstation
+
+          
+    - runcasein-host:
+        RHEL-Client-6.5,RHEL-Client-6.4,RHEL-Client-6.3,RHEL-Client-6.2,RHEL-Client-6.1:
+            only tc_Setup_Content_parse_repo_manifest tc_content_client
+
+	RHEL-Client-5.11,RHEL-Client-5.10,RHEL-Client-5.9,RHEL-Client-5.8,RHEL-Client-5.7:
+            only tc_Setup_Content_parse_repo_manifest tc_content_client
+
+        RHEL-ComputeNode-6.5,RHEL-ComputeNode-6.4,RHEL-ComputeNode-6.3,RHEL-ComputeNode-6.2,RHEL-ComputeNode-6.1:
+            only tc_Setup_Content_parse_repo_manifest tc_content_computenode
+
+        RHEL-Server-6.5,RHEL-Server-6.4,RHEL-Server-6.3,RHEL-Server-6.2,RHEL-Server-6.1:
+            only tc_Setup_Content_parse_repo_manifest tc_content_server
+
+	RHEL-Server-5.11,RHEL-Server-5.10,RHEL-Server-5.9,RHEL-Server-5.8,RHEL-Server-5.7:
+            only tc_Setup_Content_parse_repo_manifest tc_content_server
+
+        RHEL-Workstation-6.5,RHEL-Workstation-6.4,RHEL-Workstation-6.3,RHEL-Workstation-6.2,RHEL-Workstation-6.1:
+            only tc_Setup_Content_parse_repo_manifest tc_content_workstation
+
+        RHEL-Server-s390x-6.5,RHEL-Server-s390x-6.4,RHEL-Server-s390x-6.3,RHEL-Server-s390x-6.2,RHEL-Server-s390x-6.1:
+            only tc_Setup_Content_parse_repo_manifest tc_content_s390x
+
+	RHEL-Server-s390x-5.11,RHEL-Server-s390x-5.10,RHEL-Server-s390x-5.9,RHEL-Server-s390x-5.8,RHEL-Server-s390x-5.7:
+            only tc_Setup_Content_parse_repo_manifest tc_content_s390x
+
+        RHEL-Server-ppc64-6.5,RHEL-Server-ppc64-6.4,RHEL-Server-ppc64-6.3,RHEL-Server-ppc64-6.2,RHEL-Server-ppc64-6.1:
+            only tc_Setup_Content_parse_repo_manifest tc_content_ppc64
+
+	RHEL-Server-ppc64-5.11,RHEL-Server-ppc64-5.10,RHEL-Server-ppc64-5.9,RHEL-Server-ppc64-5.8,RHEL-Server-ppc64-5.7:
+            only tc_Setup_Content_parse_repo_manifest tc_content_ppc64

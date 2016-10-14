@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata packages="2" xmlns="http://linux.duke.edu/metadata/common" xmlns:rpm="http://linux.duke.edu/metadata/rpm">
+<package type="rpm">
+  <name>resource-agents</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.9.5" rel="54.el7_2.1"/>
+  <checksum type="sha256" pkgid="YES">06b247c07feec7ed3e7732f654f3cd94d3dcd6e583c5d4141e5ee5679c0ff15b</checksum>
+  <summary>Open Source HA Reusable Cluster Resource Scripts</summary>
+  <description>A set of scripts to interface with several services to operate in a
+High Availability environment for both Pacemaker and rgmanager
+service managers.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>https://github.com/ClusterLabs/resource-agents</url>
+  <time file="1449569990" build="1448038312"/>
+  <size package="803302" installed="1460142" archive="1473552"/>
+<location href="resource-agents-3.9.5-54.el7_2.1.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+ and LGPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>ppc-036.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="46224"/>
+    <rpm:requires>
+      <rpm:entry name="autoconf"/>
+      <rpm:entry name="automake"/>
+      <rpm:entry name="docbook-dtds"/>
+      <rpm:entry name="docbook-style-xsl"/>
+      <rpm:entry name="glib2-devel"/>
+      <rpm:entry name="libxslt"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="pkgconfig"/>
+      <rpm:entry name="python-devel"/>
+      <rpm:entry name="which"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>resource-agents</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.9.5" rel="54.el7"/>
+  <checksum type="sha256" pkgid="YES">e5730e83d74579f99d3b73574da74d57e7767304913d1c5b5767d1574cdf5e88</checksum>
+  <summary>Open Source HA Reusable Cluster Resource Scripts</summary>
+  <description>A set of scripts to interface with several services to operate in a
+High Availability environment for both Pacemaker and rgmanager
+service managers.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>https://github.com/ClusterLabs/resource-agents</url>
+  <time file="1446680484" build="1441598125"/>
+  <size package="802453" installed="1458540" archive="1471780"/>
+<location href="resource-agents-3.9.5-54.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+ and LGPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>ppc-034.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="45864"/>
+    <rpm:requires>
+      <rpm:entry name="autoconf"/>
+      <rpm:entry name="automake"/>
+      <rpm:entry name="docbook-dtds"/>
+      <rpm:entry name="docbook-style-xsl"/>
+      <rpm:entry name="glib2-devel"/>
+      <rpm:entry name="libxslt"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="pkgconfig"/>
+      <rpm:entry name="python-devel"/>
+      <rpm:entry name="which"/>
+    </rpm:requires>
+  </format>
+</package></metadata>

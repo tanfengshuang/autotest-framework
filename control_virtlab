@@ -1,0 +1,252 @@
+import sys, os, logging, shelve
+
+# enable modules import from current directory (tests/kvm)
+pwd = os.path.join(os.environ['AUTODIR'],'tests/kvm')
+sys.path.insert(0, pwd)
+import kvm_config, kvm_utils
+sys.path.pop(0)
+
+sys.path.insert(0, os.getcwd())
+import virtlab_env
+sys.path.pop(0)
+
+
+# ------------------------
+# create required symlinks
+# ------------------------
+rootdir='/tmp/kvm_autotest_root'
+#rootdir = '/data/images/kvm_autotest_root'
+iso=os.path.join(rootdir, 'iso')
+images=os.path.join(rootdir, 'images')
+qemu=os.path.join(rootdir, 'qemu')
+qemu_img=os.path.join(rootdir, 'qemu-img')
+
+def link_if_not_exist(ldir, target, link_name):
+    t = target
+    l = os.path.join(ldir, link_name)
+    if not os.path.exists(l):
+        os.system('ln -s %s %s' % (t, l))
+
+# Create links only if not already exist
+link_if_not_exist(pwd, '../../', 'autotest')
+link_if_not_exist(pwd, iso, 'isos')
+link_if_not_exist(pwd, images, 'images')
+link_if_not_exist(pwd, qemu, 'qemu')
+link_if_not_exist(pwd, qemu_img, 'qemu-img')
+
+# -----------
+# ksm probing
+# -----------
+ksm = virtlab_env.ksm_probe()
+
+# --------------------------------------
+# Helper function to launch kvm-autotest
+# --------------------------------------
+# This function is used to be called by job.parallel()
+def launch_kvm_test(params,tag):
+    job.run_test("kvm",params=params,tag=tag)
+
+# ----------------------
+# Single Run Test Driver
+# ----------------------
+def cfg_to_single(list, dict = {}):
+    """ Routine to control single run test cases
+    """
+
+    n = int(dict.get('nrepeat',1))
+    ins = int(dict.get('ins',1))
+    list_prep, list_test = virtlab_env.case_filter(list)
+
+    total = len(list_prep) + n * len(list_test)
+    case = 1
+    print "Doing Preparation"
+    internal_cfg_to_test(list_prep,1,case,total,False)
+    case += len(list_prep)
+
+    if dict.get('clone') != False:
+        print "Clone Images"
+        virtlab_env.image_clone(list_prep, ins, dict.get('snapshot'))
+
+    print "Launch Test Cases"
+    for instance in range(0,n):
+        internal_cfg_to_test(list_test,ins,case,total,False)
+        case += len(list_test)
+
+# ---------------------
+# Testsuite Test Driver
+# ---------------------
+def cfg_to_test(list, parallel = False, dict = {}):
+    """ Routine to control big loop
+    """
+
+    if parallel == False:
+        internal_cfg_to_test(list,1,1,1)
+        return
+
+    list_prep, list_test = virtlab_env.case_filter(list, False)
+    
+    total = len(list_prep)
+    logging.debug("cases as preparation routine %d" % total)
+
+    ncpu = kvm_utils.get_cpu_num()
+    nmem = kvm_utils.get_mem_num()
+
+    testcfg, max, sum = virtlab_env.iteration(list_test, ncpu, nmem)
+    total += sum
+    logging.debug("Total number is %d max instance is %d" % (total, max))
+
+    logging.debug("Doing preparation and image cloning")
+    case = 1
+    internal_cfg_to_test(list_prep,1,case,total,False)
+    case += len(list_prep)
+    if dict.get('clone') != False:
+        virtlab_env.image_clone(list_prep, max, dict.get('snapshot'))
+
+    logging.info("Launch Test Cases")
+    for (instance, vcpu, mem) in testcfg:
+        list = []
+        for dict in list_test:
+            dict_test = dict.copy()
+            dict_test['mem'] = mem
+            dict_test['smp'] = vcpu
+            list.append(dict_test)
+        internal_cfg_to_test(list,instance,case,total)
+        case += len(list_test)
+                    
+def parallelized_instance(dict, max_instance, case, total):
+    """ Run multiple kvm-autotest instances """
+    launchList = []
+    
+    # instances generation
+    for index in range(0,max_instance):
+        newdict = dict.copy()
+        newdict['index'] = str(index)
+        virtlab_env.ip_fixup(newdict)
+        tagname = virtlab_env.tagname(dict,index+1,max_instance,case,total,ksm)
+        newdict['image_name'] += ".%d" % index
+        launchList.append([launch_kvm_test,newdict,tagname])
+    if dict.get('dryrun') == 'yes':
+        print tagname
+    else:
+        launchTuple = tuple(launchList)
+        job.parallel(*launchList)
+
+def internal_cfg_to_test(list,max_instance,case,total,image_name_fix = True):
+    """ launch test cases depend on its parallibility
+    """
+
+    #  -------------
+    #  Run the tests
+    #  -------------
+    status_dict = {}
+
+    for dict in list:
+        if dict.get("skip") == "yes":
+            continue
+        dependencies_satisfied = True
+        for dep in dict.get("depend"):
+            for test_name in status_dict.keys():
+                if not dep in test_name:
+                    continue
+                if not status_dict[test_name]:
+                    dependencies_satisfied = False
+                    break
+        if dependencies_satisfied:
+            if dict.get('parallel') == 'yes':
+                parallelized_instance(dict, max_instance, case , total)
+                case += 1
+                current_status = True
+            else:
+                # control_loop should obey the style of virtlab
+                virtlab_env.ip_fixup(dict)
+                tagname = virtlab_env.tagname(dict,1,1,case,total,ksm)
+                if image_name_fix and dict.get('image_name'):
+                    dict['image_name'] += '.0'
+                if dict.get('dryrun') == 'yes':
+                    print tagname
+                    current_status = True
+                else:
+                    current_status = job.run_test("kvm", params=dict, tag=tagname)
+                case += 1
+        else:
+            current_status = False
+        status_dict[dict.get("name")] = current_status
+
+# ---------------------------
+# Receive Main Loop Parameter
+# ---------------------------
+print "Receive main loop parameter"
+fname = os.path.join(os.getcwd(),"loop_shelve")
+db = shelve.open(fname,writeback=False)
+parameters = None
+dict = {}
+# configratuion string
+if db.has_key('loop'):
+    parameters = db['loop']
+print 'config string',parameters
+# paramter dictionary
+if db.has_key('dict'):
+    dict = db['dict']
+print 'config dict',dict
+db.close()
+
+# -------------------------
+# parse main loop parameter
+# -------------------------
+print "Parsing main loop parameter"
+loop_config_file = os.path.join(os.getcwd(),
+                                "kvm-test/tests/kvm/virtlab_tests.cfg")
+loop_config = kvm_config.config(loop_config_file)
+loop_config.parse_string(parameters)
+
+# ---------------------------------
+# Add customized configuration here
+# ---------------------------------
+# loop_config.parse_string(...)
+
+# -----------------------
+# Environment preparation
+# -----------------------
+print "Preparing Environment"
+# receive enviromnet parameters
+fname = os.path.join(pwd,"loop_shelve")
+db = shelve.open(fname,writeback=False)
+env_parameters = None
+if db.has_key('env'):
+    env_parameters = db['env']
+print 'environment string', env_parameters
+virtlab_env_file = os.path.join(os.getcwd(),"virtlab_env.cfg")
+env_config = kvm_config.config(virtlab_env_file)
+env_config.parse_string(env_parameters)
+prep_list = env_config.get_list()
+cfg_to_single(prep_list)
+
+# ----------------------------------
+# generate config file for debugging
+# ----------------------------------
+debug_file = loop_config_file + '.dbg'
+os.system("cp %s %s" % (loop_config_file,debug_file))
+print 'Configuration file for debugging is at %s' % debug_file
+f = open(debug_file,"a")
+if parameters:
+    f.write(parameters)
+f.close()
+
+# ---------------------------------------------
+# generate config dictionary and begin the test
+# ---------------------------------------------
+loop_list = loop_config.get_list()
+if len(loop_list) == 0:
+    print "Current configuration could not produce any testcases. Please check config"
+elif dict.get('single') == True:
+    print "Single Test Mode: "
+    cfg_to_single(loop_list,dict)
+else:
+    print "Test Suite Mode %d cases" % (len(loop_list))
+    cfg_to_test(loop_list, True, dict)
+
+# create the html report in result dir
+print "Gen html report"
+reporter = os.path.join(pwd, 'make_html_report.py')
+html_file = os.path.join(job.resultdir,'results.html')
+os.system('%s -r %s -f %s -R'%(reporter, job.resultdir, html_file))

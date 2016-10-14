@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata packages="19" xmlns="http://linux.duke.edu/metadata/common" xmlns:rpm="http://linux.duke.edu/metadata/rpm"><package type="rpm">
+  <name>compat-locales-sap</name>
+  <arch>src</arch>
+  <version epoch="0" ver="1.0.8" rel="4.el7"/>
+  <checksum type="sha256" pkgid="YES">283669d266b16ca4aff22d9a50c82ea2dc60615ab3b0167a8f26df0d49b91320</checksum>
+  <summary>Compatibility locales for SAP</summary>
+  <description>Compatibility locales for legacy data on SAP Application Servers.
+
+This package provides gconv modules for SAPSJIS and SAPSJISX0213.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url></url>
+  <time file="1402356666" build="1393927017"/>
+  <size package="743004" installed="1950087" archive="1953356"/>
+  <location href="Packages/compat-locales-sap-1.0.8-4.el7.src.rpm"/>
+  <format>
+    <rpm:license>LGPLv2+ and GPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Libraries</rpm:group>
+    <rpm:buildhost>ppc-016.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="1384" end="11064"/>
+  </format>
+</package>
+<package type="rpm">
+  <name>resource-agents</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.9.5" rel="26.el7"/>
+  <checksum type="sha256" pkgid="YES">4603653e018245583957368ca3ff271d38718f9d3741c7b81eb9e941a1006839</checksum>
+  <summary>Open Source HA Reusable Cluster Resource Scripts</summary>
+  <description>A set of scripts to interface with several services to operate in a
+High Availability environment for both Pacemaker and rgmanager
+service managers.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>https://github.com/ClusterLabs/resource-agents</url>
+  <time file="1397610400" build="1395160464"/>
+  <size package="647439" installed="872621" archive="876200"/>
+  <location href="Packages/resource-agents-3.9.5-26.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+ and LGPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>ppc-021.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="1384" end="27600"/>
+    <rpm:requires>
+      <rpm:entry name="autoconf"/>
+      <rpm:entry name="automake"/>
+      <rpm:entry name="docbook-dtds"/>
+      <rpm:entry name="docbook-style-xsl"/>
+      <rpm:entry name="glib2-devel"/>
+      <rpm:entry name="libxslt"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="pkgconfig"/>
+      <rpm:entry name="python-devel"/>
+      <rpm:entry name="which"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>resource-agents</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.9.5" rel="26.el7_0.5"/>
+  <checksum type="sha256" pkgid="YES">9c539dd0895edc56ddedb64bc5cb014f2188ebfe2de41883193499af02b0fe6b</checksum>
+  <summary>Open Source HA Reusable Cluster Resource Scripts</summary>
+  <description>A set of scripts to interface with several services to operate in a
+High Availability environment for both Pacemaker and rgmanager
+service managers.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>https://github.com/ClusterLabs/resource-agents</url>
+  <time file="1415706626" build="1414708943"/>
+  <size package="658209" installed="908583" archive="912608"/>
+  <location href="Packages/resource-agents-3.9.5-26.el7_0.5.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+ and LGPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>ppc-021.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="1384" end="28292"/>
+    <rpm:requires>
+      <rpm:entry name="autoconf"/>
+      <rpm:entry name="automake"/>
+      <rpm:entry name="docbook-dtds"/>
+      <rpm:entry name="docbook-style-xsl"/>
+      <rpm:entry name="glib2-devel"/>
+      <rpm:entry name="libxslt"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="pkgconfig"/>
+      <rpm:entry name="python-devel"/>
+      <rpm:entry name="which"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>resource-agents</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.9.5" rel="26.el7_0.6"/>
+  <checksum type="sha256" pkgid="YES">3e8c95781431201ff256cbf5c47a30189ab37197dd931dceb9e9dbbbb7abc944</checksum>
+  <summary>Open Source HA Reusable Cluster Resource Scripts</summary>
+  <description>A set of scripts to interface with several services to operate in a
+High Availability environment for both Pacemaker and rgmanager
+service managers.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>https://github.com/ClusterLabs/resource-agents</url>
+  <time file="1417682985" build="1417545386"/>
+  <size package="668240" installed="954744" archive="959056"/>
+  <location href="Packages/resource-agents-3.9.5-26.el7_0.6.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+ and LGPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>ppc-015.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="1384" end="28760"/>
+    <rpm:requires>
+      <rpm:entry name="automake"/>
+      <rpm:entry name="autoconf"/>
+      <rpm:entry name="pkgconfig"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="python-devel"/>
+      <rpm:entry name="libxslt"/>
+      <rpm:entry name="glib2-devel"/>
+      <rpm:entry name="which"/>
+      <rpm:entry name="docbook-style-xsl"/>
+      <rpm:entry name="docbook-dtds"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>resource-agents</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.9.5" rel="26.el7_0.7"/>
+  <checksum type="sha256" pkgid="YES">df1da09c9b2dd7d02786fc37053cb76f5d37ba4a3d497ce577c2c4c521342dc1</checksum>
+  <summary>Open Source HA Reusable Cluster Resource Scripts</summary>
+  <description>A set of scripts to interface with several services to operate in a
+High Availability environment for both Pacemaker and rgmanager
+service managers.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>https://github.com/ClusterLabs/resource-agents</url>
+  <time file="1423048121" build="1422315143"/>
+  <size package="671676" installed="965647" archive="970096"/>
+  <location href="Packages/resource-agents-3.9.5-26.el7_0.7.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+ and LGPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>ppc-016.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="1384" end="29056"/>
+    <rpm:requires>
+      <rpm:entry name="automake"/>
+      <rpm:entry name="autoconf"/>
+      <rpm:entry name="pkgconfig"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="python-devel"/>
+      <rpm:entry name="libxslt"/>
+      <rpm:entry name="glib2-devel"/>
+      <rpm:entry name="which"/>
+      <rpm:entry name="docbook-style-xsl"/>
+      <rpm:entry name="docbook-dtds"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>resource-agents</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.9.5" rel="40.el7"/>
+  <checksum type="sha256" pkgid="YES">5c0d24b727c8dc83ad891c1fe182012427ed6819d727f1422113c2ed336f74a1</checksum>
+  <summary>Open Source HA Reusable Cluster Resource Scripts</summary>
+  <description>A set of scripts to interface with several services to operate in a
+High Availability environment for both Pacemaker and rgmanager
+service managers.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>https://github.com/ClusterLabs/resource-agents</url>
+  <time file="1423568525" build="1420588919"/>
+  <size package="728344" installed="1182365" archive="1191780"/>
+  <location href="Packages/resource-agents-3.9.5-40.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+ and LGPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>ppc-021.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="1384" end="38316"/>
+    <rpm:requires>
+      <rpm:entry name="automake"/>
+      <rpm:entry name="autoconf"/>
+      <rpm:entry name="pkgconfig"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="python-devel"/>
+      <rpm:entry name="libxslt"/>
+      <rpm:entry name="glib2-devel"/>
+      <rpm:entry name="which"/>
+      <rpm:entry name="docbook-style-xsl"/>
+      <rpm:entry name="docbook-dtds"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>resource-agents</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.9.5" rel="40.el7_1.2"/>
+  <checksum type="sha256" pkgid="YES">c7e6c7cf5d5502dc1e300aeb00798411e3407cf8935cd02acee992ac702fb982</checksum>
+  <summary>Open Source HA Reusable Cluster Resource Scripts</summary>
+  <description>A set of scripts to interface with several services to operate in a
+High Availability environment for both Pacemaker and rgmanager
+service managers.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>https://github.com/ClusterLabs/resource-agents</url>
+  <time file="1425681826" build="1423858317"/>
+  <size package="732064" installed="1193269" archive="1202824"/>
+  <location href="Packages/resource-agents-3.9.5-40.el7_1.2.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+ and LGPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>ppc-020.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="1384" end="38612"/>
+    <rpm:requires>
+      <rpm:entry name="automake"/>
+      <rpm:entry name="autoconf"/>
+      <rpm:entry name="pkgconfig"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="python-devel"/>
+      <rpm:entry name="libxslt"/>
+      <rpm:entry name="glib2-devel"/>
+      <rpm:entry name="which"/>
+      <rpm:entry name="docbook-style-xsl"/>
+      <rpm:entry name="docbook-dtds"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>resource-agents</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.9.5" rel="40.el7_1.3"/>
+  <checksum type="sha256" pkgid="YES">5ef854cb40672016f2013af668d398073d26f5498042eb1fbfebe2432a4ee473</checksum>
+  <summary>Open Source HA Reusable Cluster Resource Scripts</summary>
+  <description>A set of scripts to interface with several services to operate in a
+High Availability environment for both Pacemaker and rgmanager
+service managers.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>https://github.com/ClusterLabs/resource-agents</url>
+  <time file="1427372048" build="1426113404"/>
+  <size package="736491" installed="1210159" archive="1219852"/>
+  <location href="Packages/resource-agents-3.9.5-40.el7_1.3.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+ and LGPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>ppc-035.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="1384" end="38896"/>
+    <rpm:requires>
+      <rpm:entry name="automake"/>
+      <rpm:entry name="autoconf"/>
+      <rpm:entry name="pkgconfig"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="python-devel"/>
+      <rpm:entry name="libxslt"/>
+      <rpm:entry name="glib2-devel"/>
+      <rpm:entry name="which"/>
+      <rpm:entry name="docbook-style-xsl"/>
+      <rpm:entry name="docbook-dtds"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>resource-agents</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.9.5" rel="40.el7_1.4"/>
+  <checksum type="sha256" pkgid="YES">ecb41a1019d0e7a6d6845c7b0a47bf9c231d75cfd76f030b168e75c960cf3235</checksum>
+  <summary>Open Source HA Reusable Cluster Resource Scripts</summary>
+  <description>A set of scripts to interface with several services to operate in a
+High Availability environment for both Pacemaker and rgmanager
+service managers.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>https://github.com/ClusterLabs/resource-agents</url>
+  <time file="1435047458" build="1434031512"/>
+  <size package="739958" installed="1223030" archive="1232852"/>
+  <location href="resource-agents-3.9.5-40.el7_1.4.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+ and LGPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>ppc-015.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="1384" end="39168"/>
+    <rpm:requires>
+      <rpm:entry name="autoconf"/>
+      <rpm:entry name="automake"/>
+      <rpm:entry name="docbook-dtds"/>
+      <rpm:entry name="docbook-style-xsl"/>
+      <rpm:entry name="glib2-devel"/>
+      <rpm:entry name="libxslt"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="pkgconfig"/>
+      <rpm:entry name="python-devel"/>
+      <rpm:entry name="which"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>sapconf</name>
+  <arch>src</arch>
+  <version epoch="0" ver="0.97" rel="2.el7"/>
+  <checksum type="sha256" pkgid="YES">267fed5872832e4d4c6528ec91a874fdeb660a947d5d843689dc170d6a2ab3f3</checksum>
+  <summary>Prepares a RHEL system for running SAP software</summary>
+  <description>This package contains a script that checks and/or modifies a RHEL base
+install according to SAP requirements, e.g. kernel parameters, packages etc.,
+as documented in SAP Note 1496410 "Red Hat Enterprise Linux 6.x: Installation
+and Upgrade".</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://redhat.com/sap</url>
+  <time file="1402634043" build="1393855956"/>
+  <size package="30019" installed="29300" archive="29816"/>
+  <location href="Packages/sapconf-0.97-2.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>x86-020.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="1384" end="7112"/>
+  </format>
+</package>
+<package type="rpm">
+  <name>sapconf</name>
+  <arch>src</arch>
+  <version epoch="0" ver="0.97" rel="4.el7_0"/>
+  <checksum type="sha256" pkgid="YES">6c286d6688e2109b34a68c321cef5814e9c0e224c028cb80b1461dd88abbbef9</checksum>
+  <summary>Prepares a RHEL system for running SAP software</summary>
+  <description>This package contains a script that checks and/or modifies a RHEL base
+install according to SAP requirements, e.g. kernel parameters, packages etc.,
+as documented in SAP Note 1496410 "Red Hat Enterprise Linux 6.x: Installation
+and Upgrade".</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://redhat.com/sap</url>
+  <time file="1418895985" build="1418293361"/>
+  <size package="32076" installed="35405" archive="36240"/>
+  <location href="Packages/sapconf-0.97-4.el7_0.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>ppc-021.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="1384" end="7760"/>
+  </format>
+</package>
+<package type="rpm">
+  <name>sapconf</name>
+  <arch>src</arch>
+  <version epoch="0" ver="0.98" rel="6.el7"/>
+  <checksum type="sha256" pkgid="YES">0f02c2f6c507aed4f03a658ed344070118e3963d81922d10f98a7fb407677fa4</checksum>
+  <summary>Prepares a RHEL system for running SAP software</summary>
+  <description>This package contains a script that checks and/or modifies a RHEL base
+install according to SAP requirements, e.g. kernel parameters, packages etc.,
+as documented in SAP Note 2002167 " Red Hat Enterprise Linux 7.x: Installation
+and Upgrade".</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://redhat.com/sap</url>
+  <time file="1425536113" build="1418039955"/>
+  <size package="36811" installed="41040" archive="42568"/>
+  <location href="Packages/sapconf-0.98-6.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>x86-019.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="1384" end="9556"/>
+  </format>
+</package>
+<package type="rpm">
+  <name>vhostmd</name>
+  <arch>src</arch>
+  <version epoch="0" ver="0.5" rel="11.el7_0"/>
+  <checksum type="sha256" pkgid="YES">c399568634f6661f828592cff544cfc37d00ae62338390a870a8c98ea93b55d6</checksum>
+  <summary>Virtualization host metrics daemon</summary>
+  <description>vhostmd provides a "metrics communication channel" between a host and
+its hosted virtual machines, allowing limited introspection of host
+resource usage from within virtual machines.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://gitorious.org/vhostmd</url>
+  <time file="1402420019" build="1399909058"/>
+  <size package="314941" installed="327136" archive="328564"/>
+  <location href="Packages/vhostmd-0.5-11.el7_0.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>Unspecified</rpm:group>
+    <rpm:buildhost>ppc-016.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="1384" end="8900"/>
+    <rpm:requires>
+      <rpm:entry name="chrpath"/>
+      <rpm:entry name="libvirt-devel"/>
+      <rpm:entry name="libxml2-devel"/>
+      <rpm:entry name="pkgconfig"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>vhostmd</name>
+  <arch>src</arch>
+  <version epoch="0" ver="0.5" rel="8.el7"/>
+  <checksum type="sha256" pkgid="YES">d1b5ec55a27ae25dee1d3338da3a4de1543c24fb008cd055486c6e1d4d45904f</checksum>
+  <summary>Virtualization host metrics daemon</summary>
+  <description>vhostmd provides a "metrics communication channel" between a host and
+its hosted virtual machines, allowing limited introspection of host
+resource usage from within virtual machines.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://gitorious.org/vhostmd</url>
+  <time file="1402356665" build="1390851981"/>
+  <size package="314215" installed="326175" archive="327448"/>
+  <location href="Packages/vhostmd-0.5-8.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>Unspecified</rpm:group>
+    <rpm:buildhost>ppc-020.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:sourcerpm></rpm:sourcerpm>
+    <rpm:header-range start="1384" end="8536"/>
+    <rpm:requires>
+      <rpm:entry name="chrpath"/>
+      <rpm:entry name="libvirt-devel"/>
+      <rpm:entry name="libxml2-devel"/>
+      <rpm:entry name="pkgconfig"/>
+    </rpm:requires>
+  </format>
+</package>
+
+<package type="rpm">
+  <name>resource-agents</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.9.5" rel="40.el7_1.6"/>
+  <checksum type="sha256" pkgid="YES">5b42748d6a85f93bc8d31918745b21498f1be7cfa83f9b31f1c43790a81abef7</checksum>
+  <summary>Open Source HA Reusable Cluster Resource Scripts</summary>
+  <description>A set of scripts to interface with several services to operate in a
+High Availability environment for both Pacemaker and rgmanager
+service managers.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>https://github.com/ClusterLabs/resource-agents</url>
+  <time file="1438792486" build="1436815773"/>
+  <size package="746019" installed="1245268" archive="1255388"/>
+<location href="resource-agents-3.9.5-40.el7_1.6.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+ and LGPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>ppc-021.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="39860"/>
+    <rpm:requires>
+      <rpm:entry name="autoconf"/>
+      <rpm:entry name="automake"/>
+      <rpm:entry name="docbook-dtds"/>
+      <rpm:entry name="docbook-style-xsl"/>
+      <rpm:entry name="glib2-devel"/>
+      <rpm:entry name="libxslt"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="pkgconfig"/>
+      <rpm:entry name="python-devel"/>
+      <rpm:entry name="which"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>resource-agents</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.9.5" rel="40.el7_1.9"/>
+  <checksum type="sha256" pkgid="YES">3df8e60abbef0643b4a57685305f584b43f4c9acd240b8db689569cf40eb67ea</checksum>
+  <summary>Open Source HA Reusable Cluster Resource Scripts</summary>
+  <description>A set of scripts to interface with several services to operate in a
+High Availability environment for both Pacemaker and rgmanager
+service managers.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>https://github.com/ClusterLabs/resource-agents</url>
+  <time file="1442308900" build="1441597121"/>
+  <size package="748349" installed="1251455" archive="1261868"/>
+<location href="resource-agents-3.9.5-40.el7_1.9.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+ and LGPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>ppc-035.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="40620"/>
+    <rpm:requires>
+      <rpm:entry name="autoconf"/>
+      <rpm:entry name="automake"/>
+      <rpm:entry name="docbook-dtds"/>
+      <rpm:entry name="docbook-style-xsl"/>
+      <rpm:entry name="glib2-devel"/>
+      <rpm:entry name="libxslt"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="pkgconfig"/>
+      <rpm:entry name="python-devel"/>
+      <rpm:entry name="which"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>sapconf</name>
+  <arch>src</arch>
+  <version epoch="0" ver="0.98" rel="7.el7"/>
+  <checksum type="sha256" pkgid="YES">fc3da9ca79dc3c9852582a939a4c429a5e90a0c28d46779c549d6ac3c1e07557</checksum>
+  <summary>Prepares a RHEL system for running SAP software</summary>
+  <description>This package contains a script that checks and/or modifies a RHEL base
+install according to SAP requirements, e.g. kernel parameters, packages etc.,
+as documented in SAP Note 2002167 " Red Hat Enterprise Linux 7.x: Installation
+and Upgrade".</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>http://redhat.com/sap</url>
+  <time file="1440843471" build="1431955985"/>
+  <size package="41380" installed="53411" archive="55788"/>
+<location href="sapconf-0.98-7.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>x86-025.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="11168"/>
+  </format>
+</package>
+<package type="rpm">
+  <name>resource-agents</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.9.5" rel="54.el7"/>
+  <checksum type="sha256" pkgid="YES">e5730e83d74579f99d3b73574da74d57e7767304913d1c5b5767d1574cdf5e88</checksum>
+  <summary>Open Source HA Reusable Cluster Resource Scripts</summary>
+  <description>A set of scripts to interface with several services to operate in a
+High Availability environment for both Pacemaker and rgmanager
+service managers.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>https://github.com/ClusterLabs/resource-agents</url>
+  <time file="1446680484" build="1441598125"/>
+  <size package="802453" installed="1458540" archive="1471780"/>
+<location href="resource-agents-3.9.5-54.el7.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+ and LGPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>ppc-034.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="45864"/>
+    <rpm:requires>
+      <rpm:entry name="autoconf"/>
+      <rpm:entry name="automake"/>
+      <rpm:entry name="docbook-dtds"/>
+      <rpm:entry name="docbook-style-xsl"/>
+      <rpm:entry name="glib2-devel"/>
+      <rpm:entry name="libxslt"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="pkgconfig"/>
+      <rpm:entry name="python-devel"/>
+      <rpm:entry name="which"/>
+    </rpm:requires>
+  </format>
+</package>
+<package type="rpm">
+  <name>resource-agents</name>
+  <arch>src</arch>
+  <version epoch="0" ver="3.9.5" rel="54.el7_2.1"/>
+  <checksum type="sha256" pkgid="YES">06b247c07feec7ed3e7732f654f3cd94d3dcd6e583c5d4141e5ee5679c0ff15b</checksum>
+  <summary>Open Source HA Reusable Cluster Resource Scripts</summary>
+  <description>A set of scripts to interface with several services to operate in a
+High Availability environment for both Pacemaker and rgmanager
+service managers.</description>
+  <packager>Red Hat, Inc. &lt;http://bugzilla.redhat.com/bugzilla&gt;</packager>
+  <url>https://github.com/ClusterLabs/resource-agents</url>
+  <time file="1449569990" build="1448038312"/>
+  <size package="803302" installed="1460142" archive="1473552"/>
+<location href="resource-agents-3.9.5-54.el7_2.1.src.rpm"/>
+  <format>
+    <rpm:license>GPLv2+ and LGPLv2+</rpm:license>
+    <rpm:vendor>Red Hat, Inc.</rpm:vendor>
+    <rpm:group>System Environment/Base</rpm:group>
+    <rpm:buildhost>ppc-036.build.eng.bos.redhat.com</rpm:buildhost>
+    <rpm:header-range start="1384" end="46224"/>
+    <rpm:requires>
+      <rpm:entry name="autoconf"/>
+      <rpm:entry name="automake"/>
+      <rpm:entry name="docbook-dtds"/>
+      <rpm:entry name="docbook-style-xsl"/>
+      <rpm:entry name="glib2-devel"/>
+      <rpm:entry name="libxslt"/>
+      <rpm:entry name="perl"/>
+      <rpm:entry name="pkgconfig"/>
+      <rpm:entry name="python-devel"/>
+      <rpm:entry name="which"/>
+    </rpm:requires>
+  </format>
+</package></metadata>

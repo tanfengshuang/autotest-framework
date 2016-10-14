@@ -1,0 +1,32 @@
+pci_assignable = vf
+device_name = "eth0"
+driver = igb
+driver_option = "max_vfs=7"
+devices_requested = 7
+mac_ip_filter = "HWaddr (.\w+:\w+:\w+:\w+:\w+:\w+)\s+?inet addr:(.\d+\.\d+\.\d+\.\d+)"
+mac_changeable = "yes"
+
+variants:
+    - vf:	
+
+variants:
+    - prepare:
+        only unattended_install.cd.default_install.aio_native rh_kernel_update disable_win_update
+    - @passthrough:
+        only boot ping
+        variants:
+            - 1vf:
+                devices_requested = 1
+            - 3vf:
+                devices_requested = 3
+            - 5vf:
+                devices_requested = 5
+            - 7vf:
+                devices_requested = 7
+    - @basic:
+        only reboot stop_continue shutdown
+    - @acpi:
+        only linux_s3 guest_s4 physical_resources_check
+    - @stressing:
+        only autotest.stress
+

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rhel>
+    <otherrepos value='otherrepos'>
+        <productid name="Red Hat Certification (for RHEL Server" value="282">
+            <releaseversion value='7Server'>
+                <arch value="x86_64">
+                     <repoid>
+                         rhel-7-server-rpms
+                         rhel-7-server-openstack-beta-rpms
+                     </repoid>
+                </arch>
+            </releaseversion>
+        </productid>
+        <productid name="Red Hat OpenShift Enterprise" value="290">
+            <releaseversion value='7Server'>
+                <arch value="x86_64">
+                     <repoid>
+                         rhel-server-rhscl-7-rpms
+                     </repoid>
+                </arch>
+            </releaseversion>
+        </productid>
+        <productid name="Red Hat OpenShift Enterprise Infrastructure" value="193">
+            <releaseversion value='6Server'>
+                <arch value="x86_64">
+                     <repoid>
+                         rhel-6-server-rh-common-rpms
+                         rhel-server-rhscl-6-beta-rpms
+                         rhel-6-server-ose-2.0-infra-rpms
+                         rhel-6-server-sam-rpms
+                     </repoid>
+                </arch>
+            </releaseversion>
+        </productid>
+        <productid name="Red Hat OpenShift Enterprise Application Node" value="194">
+            <releaseversion value='6Server'>
+            	<arch value="x86_64">
+            	    <repoid>
+            	    	rhel-server-ose-node-6-rpms
+            	    </repoid>
+            	</arch>
+            </releaseversion>
+        </productid>
+        <productid name="Red Hat OpenShift Enterprise Client Tools" value="197">
+            <releaseversion value='6Server'>
+                <arch value="x86_64">
+                    <repoid>
+                    </repoid>
+                </arch>
+            </releaseversion>
+        </productid>
+        <productid name="Red Hat OpenShift Enterprise JBoss EAP add-on" value="198">
+            <releaseversion value='6Server'>
+                <arch value="x86_64">
+                    <repoid>
+                    	rhel-server-rhscl-6-beta-rpms
+                    	rhel-6-server-rh-common-rpms
+                    	rhel-6-server-optional-rpms
+                    	jb-eap-5-for-rhel-6-server-rpms
+                    	jb-eap-6-for-rhel-6-server-rpms
+                    	rhel-6-server-beta-rpms
+                    	rhel-6-server-sam-rpms
+                    </repoid>
+                </arch>
+            </releaseversion>
+        </productid>
+	<productid name="Red Hat Enterprise Virtualization" value="150">
+	    <releaseversion value='6Server'>
+  	        <arch value="x86_64">
+		    <repoid>
+		    	rhel-6-server-beta-rpms
+		    	rhel-6-server-optional-beta-rpms
+			jb-eap-5-for-rhel-6-server-rpms
+		        jb-eap-6-for-rhel-6-server-rpms
+		    	rhel-6-server-beta-rpms
+		    	rhel-6-server-rhevm-3.1-rpms
+		    	rhel-6-server-rhevm-3.2-rpms
+		    	rhel-6-server-rpms
+		    	rhel-6-server-sam-rpms
+		    	rhel-6-server-supplementary-rpms
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>				
+		    </repoid>
+  	        </arch>
+	    </releaseversion>
+	</productid>
+	<productid name="Red Hat Directory Server"  value="200">
+	    <releaseversion value='6Server'>
+  	        <arch value="x86_64">
+		    <repoid>
+			rhel-6-server-optional-rpms
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+		    	rhel-6-server-optional-rpms
+		    </repoid>
+  	        </arch>
+	    </releaseversion>
+	    <releaseversion value='5Server'>
+  	        <arch value="x86_64">
+		    <repoid>
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>				
+		    </repoid>
+  	        </arch>
+	     </releaseversion>
+	</productid>
+
+	<productid name="Red Hat Developer Toolset (for RHEL Server)" value="176">
+	    <releaseversion value='6Server'>
+  	        <arch value="x86_64">
+		    <repoid>
+			rhel-6-server-optional-rpms
+			rhel-6-server-eus-rpms
+		    </repoid>
+  	        </arch>
+  	        <arch value="i386">
+		    <repoid>
+		    	rhel-6-server-optional-rpms
+			rhel-6-server-eus-rpms
+		    </repoid>
+  	        </arch>
+	    </releaseversion>
+	</productid>  
+	<productid name="Red Hat Developer Toolset (for RHEL Workstation)" value="179">
+	    <releaseversion value='6Workstation'>
+		<arch value="x86_64">
+		    <repoid>
+			rhel-6-workstation-optional-rpms
+			rhel-6-workstation-rpms
+		    </repoid>
+		</arch>
+		<arch value="i386">
+		    <repoid>
+			rhel-6-workstation-optional-rpms
+			rhel-6-workstation-rpms
+		    </repoid>
+		</arch>
+	    </releaseversion>
+	</productid>
+	<productid name="Red Hat Software Collections Beta (for RHEL Server)" value="205">
+	    <releaseversion value='6Server'>
+		<arch value="x86_64">
+		    <repoid>
+			rhel-6-server-optional-rpms
+		    </repoid>
+		</arch>
+		<arch value="i386">
+		    <repoid>
+			rhel-6-server-optional-rpms
+		    </repoid>
+		</arch>
+	    </releaseversion>
+	</productid>
+  	<productid name="Red Hat Software Collections Beta (for RHEL Workstation)" value="207">
+	    <releaseversion value='6Workstation'>
+		<arch value="x86_64">
+		    <repoid>
+			rhel-6-workstation-optional-rpms
+		    </repoid>
+		</arch>
+		<arch value="i386">
+		    <repoid>
+			rhel-6-workstation-optional-rpms
+		    </repoid>
+		</arch>
+	    </releaseversion>
+	</productid>
+	<productid name="Red Hat Software Collections Beta (for RHEL Server)" value="201">
+	    <releaseversion value='6Server'>
+		<arch value="x86_64">
+		    <repoid>
+			rhel-6-server-optional-rpms
+		    </repoid>
+		</arch>
+		<arch value="i386">
+		    <repoid>
+			rhel-6-server-optional-rpms
+		    </repoid>
+		</arch>
+	    </releaseversion>
+	</productid>
+  	<productid name="Red Hat Software Collections Beta (for RHEL Workstation)" value="203">
+	    <releaseversion value='6Workstation'>
+		<arch value="x86_64">
+		    <repoid>
+			rhel-6-workstation-optional-rpms
+		    </repoid>
+		</arch>
+		<arch value="i386">
+		    <repoid>
+			rhel-6-workstation-optional-rpms
+		    </repoid>
+		</arch>
+	    </releaseversion>
+	</productid>
+    </otherrepos>
+</rhel>				

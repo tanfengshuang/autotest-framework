@@ -1,0 +1,6 @@
+rhel-6-server-sam-beta-debug-rpms
+rhel-6-server-sam-beta-rpms
+rhel-6-server-sam-beta-source-rpms
+rhel-6-server-sam-debug-rpms
+rhel-6-server-sam-rpms
+rhel-6-server-sam-source-rpms
